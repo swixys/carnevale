@@ -1,0 +1,81 @@
+@import "variables";
+@import "mixins";
+
+button{
+  font-family: $buttonFont;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.56;
+  letter-spacing: -0.2px;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  @include respond-to(desktop) {
+    font-size: 22px;
+    line-height: 34px;
+    letter-spacing: -0.25px;
+  }
+
+  border: 2px solid $orangey-red;
+  border-radius: 30px;
+  padding: 0 25px;
+  height: 50px;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover {
+    transition: all 0.2s;
+    background-color: $orangey-red;
+    color: $white;
+    @media screen and (max-width: 1019px) {
+      border: 2px solid $orangey-red;
+      color: $black;
+      background-color: transparent;
+    }
+  }
+  &:active{
+    @media screen and (max-width: 1019px) {
+      background-color: $orangey-red;
+      color: $white;
+    }
+  }
+  &:focus {
+    outline: none;
+  }
+  &.dark {
+    border-color: $white;
+    color: $white;
+    background-color: transparent;
+
+    &:hover {
+      color: $orangey-red;
+      background-color: $white;
+      @media screen and (max-width: 1019px) {
+        border-color: $white;
+        color: $white;
+        background-color: transparent;
+      }
+    }
+    &:active {
+      @media screen and (max-width: 1019px) {
+        color: $orangey-red;
+        background-color: $white;
+      }
+    }
+
+    &.slider-control__down {
+      background-color: transparent;
+
+      &:hover {
+        background-color: $white;
+      }
+    }
+  }
+}
+.menu {
+  button {
+    border: none !important;
+    &:hover {
+      border: none !important;
+    }
+  }
+}

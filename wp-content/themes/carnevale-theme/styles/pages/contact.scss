@@ -1,0 +1,461 @@
+@import "../mixins";
+@import "../variables";
+
+.container {
+  margin: 0 auto;
+  padding-left: 25px;
+  padding-right: 25px;
+  @include respond-to(tablets) {
+    max-width: 680px;
+  }
+  @include respond-to(desktop) {
+    max-width: 1370px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+.contact {
+  &__header {
+    margin-bottom: 40px;
+    @include respond-to(tablets) {
+      h1 {
+        text-align: center;
+      }
+      p {
+        text-align: center;
+        max-width: 830px;
+        margin: 0 auto;
+      }
+    }
+    @include respond-to(desktop) {
+      margin-bottom: 95px;
+    }
+
+    .body-large {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__form {
+    padding-bottom: 50px;
+    margin-bottom: 40px;
+    border-bottom: none;
+    position: relative;
+    &:before{
+      position: absolute;
+      content: "";
+      bottom: 0;
+      height: 1px;
+      width: 100vw;
+      background: #d8d8d8;
+      left: 50%;
+      transform: translatex(-50%);
+    }
+    @include respond-to(desktop) {
+      padding-bottom: 90px;
+      margin-bottom: 90px;
+    }
+
+    form {
+      max-width: 830px;
+      margin: 0 auto;
+    }
+  }
+
+  &__careers {
+    margin-bottom: 90px;
+    .about__description p{
+      font-size: 22px;
+      @include respond-to(desktop) {
+        font-size: 30px;
+      }
+    }
+  }
+
+  &__gallery {
+    margin-bottom: 40px;
+    @include respond-to(desktop) {
+      margin-bottom: 90px;
+    }
+
+    .gallery {
+      display: flex;
+      overflow-x: scroll;
+      padding: 0;
+      scroll-snap-type: x mandatory;
+      scroll-padding-inline-start: 20px;
+
+      &::-webkit-scrollbar {
+        height: 0;
+      }
+
+      &__item {
+        width: 285px;
+        height: 214px;
+        overflow: hidden;
+        margin-right: 25px;
+        display: flex;
+        justify-content: center;
+        flex-shrink: 0;
+        scroll-snap-align: start;
+        &:last-child{
+
+        }
+        @include respond-to(tablets) {
+          width: 247px;
+          height: 185px;
+        }
+        @include respond-to(desktop) {
+          width: 500px;
+          height: 375px;
+          margin-right: 50px;
+        }
+      }
+
+      &__image {
+        height: 100%;
+      }
+    }
+  }
+
+  &__open-position {
+    margin-bottom: 45px;
+    @include respond-to(desktop) {
+      margin-bottom: 90px;
+    }
+
+    .about__description p {
+      margin-bottom: 20px;
+      font-size: 18px;
+      @include respond-to(desktop) {
+        font-size: 22px;
+      }
+    }
+
+    .position {
+      &__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      &__item {
+        margin-bottom: 15px;
+        line-height: 0;
+        font-weight: 500;
+        @include respond-to(desktop) {
+          margin-bottom: 25px;
+        }
+        &:last-child{
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+.about {
+  margin-bottom: 45px;
+  @include respond-to(tablets) {
+    display: flex;
+    justify-content: space-between;
+  }
+  @include respond-to(desktop) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 95px;
+  }
+
+  &__title, &__description {
+    @include respond-to(tablets) {
+      width: 48%;
+      p {
+        margin: 0;
+      }
+    }
+  }
+
+  &__description {
+
+    @include respond-to(tablets) {
+      font-size: 30px;
+      font-weight: 300;
+      line-height: 1.4;
+      letter-spacing: -0.25px;
+    }
+
+    a {
+      font-size: 18px;
+      vertical-align: initial;
+      @include respond-to(desktop) {
+        font-size: 22px;
+      }
+
+    }
+  }
+
+  &__title {
+    font-family: $mediumFont;
+
+    &--large {
+      font-size: 30px;
+      font-weight: 600;
+      line-height: 1.27;
+      letter-spacing: -0.75px;
+      @include respond-to(desktop) {
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 1.13;
+        letter-spacing: -1px;
+      }
+
+    }
+  }
+
+  &__link {
+    display: none;
+    margin-right: 30px;
+    @include respond-to(tablets) {
+      display: inline-block;
+    }
+  }
+
+  &__quote {
+    font-family: $italicFont;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: italic;
+    font-size: 30px;
+    line-height: 1.27;
+    @include respond-to(tablets) {
+      display: flex;
+      font-size: 30px;
+    }
+
+    @include respond-to(desktop) {
+      line-height: 1.09;
+      display: flex;
+      font-size: 55px;
+    }
+
+    p {
+      margin: 0;
+      max-width: 1120px;
+
+      &:first-child {
+        margin-right: 15px;
+      }
+    }
+
+    &-author {
+      font-family: $mediumFont;
+      font-weight: 500;
+      line-height: 1.55;
+      letter-spacing: -0.25px;
+      font-size: 18px;
+      padding: 35px 0 0 30px;
+      @include respond-to(desktop) {
+        font-size: 22px;
+        padding: 45px 0 0 30px;
+      }
+    }
+  }
+
+  &.quote {
+    display: block;
+    padding: 0 25px;
+    @include respond-to(tablets) {
+      padding: 0 45px;
+    }
+  }
+
+  .title {
+    @include respond-to(tablets) {
+      max-width: 560px;
+    }
+    @include respond-to(tablets) {
+      margin-bottom: 45px;
+    }
+
+    &__title {
+      margin: 0;
+      font-family: $italicFont;
+      font-size: 22px;
+      line-height: 34px;
+      @include respond-to(desktop) {
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 1.33;
+      }
+    }
+
+    &__subtitle {
+      margin: 0 0 45px;
+      font-family: $mediumFont;
+      font-size: 40px;
+      font-weight: 600;
+      line-height: 1.13;
+      letter-spacing: -1.14px;
+
+      @include respond-to(desktop) {
+        font-size: 55px;
+        font-weight: 600;
+        line-height: 1.09;
+        letter-spacing: -1.5px;
+      }
+    }
+  }
+
+  .social-links {
+    padding-top: 20px;
+    border-top: 1px solid $lightGrey;
+
+    .social-link {
+      vertical-align: initial;
+      margin-right: 30px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .details-image {
+    width: 100%;
+
+    &__wrapper {
+      width: 100%;
+      @include respond-to(tablets) {
+        max-height: 354px;
+        max-width: 630px;
+      }
+      @include respond-to(desktop) {
+        max-height: 714px;
+        max-width: 1270px;
+      }
+    }
+  }
+}
+
+.footer {
+
+  @include respond-to(desktop) {
+    padding-top: 95px;
+  }
+}
+
+.logo {
+  &__image {
+    display: block!important;
+
+    &--dark {
+      display: none!important;
+    }
+  }
+}
+
+.menu {
+  &__icon {
+    &-dark {
+      visibility: hidden;
+    }
+  }
+
+  &__link {
+    color: $black!important;
+
+    &:hover {
+      color: $orangey-red!important;
+    }
+  }
+}
+.menu__icon{
+  display: block!important;
+
+}
+.menu__icon-dark{
+  display: none!important;
+}
+.contact__header{
+  h1{
+    margin-bottom: 40px;
+  }
+}
+.form__submit{
+  &:active{
+    @media screen and (max-width: 1019px) {
+
+      color: $white;
+
+    }
+  }
+}
+.recruiters{
+  @media screen and (max-width: 1019px) {
+    margin-bottom: 10px!important;
+  }
+}
+input:-webkit-autofill {
+  -webkit-box-shadow:0 0 0 50px white inset; /* Change the color to your own background color */
+  -webkit-text-fill-color: #333;
+}
+
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 50px white inset;/*your box-shadow*/
+  -webkit-text-fill-color: #333;
+}
+.contact__gallery{
+  position: relative;
+  height: 185px;
+  margin-bottom: 159px;
+  @include respond-to(tablets) {
+    margin-bottom: 120px;
+  }
+  @include respond-to(desktop) {
+    height: 375px;
+    margin-bottom: 180px;
+  }
+  .gallery{
+    position: absolute;
+    content: "";
+    top: 0;
+    width: 100vw;
+    left: 0;
+    right: 50%;
+    transform: translateX(0px);
+    margin: 0;
+    scroll-padding-inline-start: 0px;
+    @include respond-to(tablets) {
+      top: 0;
+      width: 100vw;
+      left: 50%;
+      right: 50%;
+      transform: translateX(-315px);
+    }
+    @include respond-to(desktop) {
+      top: 0;
+      width: calc(100vw - 200px);
+      left: 50%;
+      right: 50%;
+      transform: translateX(-635px);
+    }
+    @media only screen and (max-width : 1370px) {
+      left: 0;
+      transform: translateX(0px);
+    }
+  }
+  .gallery__controls{
+    bottom: -120px;
+    position: absolute;
+    @include respond-to(tablets) {
+      bottom: -81px;
+    }
+    @include respond-to(desktop) {
+      bottom: -93px;
+    }
+  }
+}
+.main{
+  overflow-x: hidden;
+}

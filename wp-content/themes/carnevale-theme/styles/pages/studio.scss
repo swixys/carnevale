@@ -1,0 +1,492 @@
+  @import "../mixins";
+@import "../variables";
+
+.main {
+  margin: 0 auto;
+  max-width: none;
+  section {
+    padding: 45px 25px;
+    border-bottom: 1px solid $lightGrey;
+    margin: 0 auto;
+    max-width: 1370px;
+    @include respond-to(tablets) {
+      max-width: 680px;
+    }
+    @include respond-to(desktop) {
+      max-width: 1370px;
+    }
+    &:first-child {
+      padding-top: 10px;
+    }
+
+    &:last-child {
+      border: none;
+      padding-bottom: 0;
+    }
+
+    &.studio__gallery {
+      padding: 0;
+    }
+
+    @include respond-to(tablets) {
+      &:first-child {
+        padding-top: 15px;
+      }
+    }
+    @include respond-to(desktop) {
+      padding: 95px 50px 90px;
+      &:first-child {
+        padding-top: 50px;
+      }
+      &.content {
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+.main .content{
+  padding: 45px 25px;
+  border-bottom: none!important;
+  position: relative;
+  padding-bottom: 0;
+  @include respond-to(desktop) {
+    padding: 95px 50px;
+  }
+  &:before{
+    position: absolute;
+    content: "";
+    bottom: -45px;
+    height: 1px;
+    width: 100vw;
+    background: #d8d8d8;
+    left: 50%;
+    transform: translatex(-50%);
+    @include respond-to(desktop) {
+      bottom: -95px;
+    }
+  }
+}
+.studio {
+  border-bottom: none!important;
+  position: relative;
+  &:before{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    height: 1px;
+    width: 100vw;
+    background: #d8d8d8;
+    left: 50%;
+    transform: translatex(-50%);
+  }
+  &__header {
+    h1 {
+      margin-top: 0;
+    }
+
+    @include respond-to(tablets) {
+      display: flex;
+      justify-content: space-between;
+      h1 {
+        width: 48%;
+        font-weight: 600;
+        line-height: 1.14;
+        letter-spacing: -2px;
+        @include respond-to(desktop) {
+          font-size: 70px;
+        }
+
+        .italic {
+          font-weight: 300;
+          line-height: 0.86;
+          letter-spacing: -1px;
+          @include respond-to(desktop) {
+            font-size: 70px;
+          }
+        }
+      }
+    }
+
+  }
+
+  &__description {
+    margin-bottom: 45px;
+    margin-top: 0;
+    padding-right: 0;
+    @include respond-to(tablets) {
+      margin-bottom: 45px;
+      flex-basis: 48%;
+      max-width: 560px;
+      padding-right: 25px;
+    }
+    @include respond-to(desktop) {
+      margin-bottom: 95px;
+      padding-right: 50px;
+    }
+  }
+}
+
+.skills {
+  font-family: $mediumFont;
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    @include respond-to(tablets) {
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__item {
+    padding: 15px 0;
+    border-top: 1px solid $lightGrey;
+
+    @include respond-to(tablets) {
+      flex-basis: 46%;
+      margin-right: 25px;
+    }
+
+    @include respond-to(desktop) {
+      flex-basis: 28%;
+      margin-right: 50px;
+    }
+  }
+
+  &__link {
+    border: none;
+    letter-spacing: -0.25px;
+    font-weight: 500;
+  }
+}
+
+.about {
+  margin-bottom: 45px;
+  @include respond-to(tablets) {
+    display: flex;
+    justify-content: space-between;
+  }
+  @include respond-to(desktop) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 90px;
+  }
+
+  &:last-child {
+
+  }
+
+  &__title, &__description {
+    p {
+      margin-top: 0;
+
+    }
+
+    @include respond-to(tablets) {
+      width: 48%;
+    }
+  }
+
+  &__description {
+    a {
+      font-size: 18px;
+      vertical-align: initial;
+      @include respond-to(desktop) {
+        font-size: 22px;
+      }
+
+    }
+  }
+
+  &__title {
+    font-family: $mediumFont;
+
+    &--large {
+      font-size: 30px;
+      font-weight: 600;
+      line-height: 1.27;
+      letter-spacing: -0.75px;
+      @include respond-to(desktop) {
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 1.13;
+        letter-spacing: -1px;
+      }
+
+    }
+  }
+
+  &__link {
+    display: none;
+    margin-right: 30px;
+    @include respond-to(tablets) {
+      display: inline-block;
+    }
+  }
+
+  &__quote {
+    font-family: $italicFont;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: italic;
+    font-size: 30px;
+    line-height: 1.27;
+    @include respond-to(tablets) {
+      display: flex;
+      font-size: 30px;
+    }
+
+    @include respond-to(desktop) {
+      line-height: 1.09;
+      display: flex;
+      font-size: 55px;
+    }
+
+    p {
+      margin: 0;
+      max-width: 1120px;
+
+      &:first-child {
+        margin-right: 15px;
+      }
+    }
+
+    &-author {
+      font-family: $mediumFont;
+      font-weight: 500;
+      line-height: 1.55;
+      letter-spacing: -0.25px;
+      font-size: 18px;
+      padding: 35px 0 0 30px;
+      @include respond-to(desktop) {
+        font-size: 22px;
+        padding: 45px 0 0 30px;
+      }
+    }
+  }
+
+  &.quote {
+    display: block;
+    padding: 0 25px;
+    @include respond-to(tablets) {
+      padding: 0 45px;
+    }
+  }
+
+  .title {
+    @include respond-to(tablets) {
+      max-width: 560px;
+    }
+    @include respond-to(tablets) {
+      margin-bottom: 45px;
+    }
+
+    &__title {
+      margin: 0;
+      font-family: $italicFont;
+      font-size: 22px;
+      line-height: 34px;
+      @include respond-to(desktop) {
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 1.33;
+      }
+    }
+
+    &__subtitle {
+      margin: 0 0 45px;
+      font-family: $mediumFont;
+      font-size: 40px;
+      font-weight: 600;
+      line-height: 1.13;
+      letter-spacing: -1.14px;
+
+      @include respond-to(desktop) {
+        font-size: 55px;
+        font-weight: 600;
+        line-height: 1.09;
+        letter-spacing: -1.5px;
+      }
+    }
+  }
+
+  .social-links {
+    padding-top: 20px;
+    border-top: 1px solid $lightGrey;
+
+    .social-link {
+      vertical-align: initial;
+      margin-right: 30px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .details-image {
+    width: 100%;
+
+    &__wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      max-height: 182px;
+      max-width: 325px;
+      @include respond-to(tablets) {
+        max-height: 354px;
+        max-width: 630px;
+      }
+      @include respond-to(desktop) {
+        max-height: 714px;
+        max-width: 1320px;
+      }
+    }
+
+    &__image {
+      width: 100%;
+    }
+  }
+}
+
+.about-images {
+  @include respond-to(tablets) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .details-image {
+    margin-bottom: 40px;
+    @include respond-to(tablets) {
+      margin: 0 0 40px;
+    }
+    @include respond-to(desktop) {
+      margin-bottom: 80px;
+      width: 48%;
+    }
+
+    &__wrapper {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      max-height: 244px;
+      max-width: 325px;
+      @include respond-to(tablets) {
+        max-height: 226px;
+        max-width: 302px;
+      }
+      @include respond-to(desktop) {
+        max-height: 458px;
+        max-width: 635px;
+      }
+    }
+
+    &__image {
+      height: 244px;
+      max-height: 100%;
+      @include respond-to(tablets) {
+        height: auto;
+      }
+    }
+  }
+}
+
+.studio__class {
+  .about {
+    margin-bottom: 0px;
+  }
+}
+
+.studio__gallery {
+  max-width: none!important;
+  .carousel {
+    position: relative;
+
+
+    &__controls {
+      width: 100%;
+      position: absolute;
+      bottom: 50px;
+      justify-content: flex-end;
+      @include respond-to(tablets) {
+        display: flex;
+      }
+
+      &-slides {
+        @include respond-to(tablets) {
+          display: block;
+        }
+      }
+    }
+
+    &__image-wrapper {
+      overflow: hidden;
+      @include respond-to(tablets) {
+        width: auto;
+        height: auto;
+        max-width: initial;
+      }
+      @include respond-to(desktop) {
+        width: 100%;
+        height: auto;
+        max-height: 770px;
+      }
+    }
+
+    &__image {
+      height: 500px;
+      object-fit: cover;
+      width: 100%;
+      @include respond-to(tablets) {
+        height: auto;
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+.footer {
+  margin-top: 0!important;
+  &:before{
+    display: none;
+  }
+  border: none;
+  @include respond-to(desktop) {
+    padding-top: 0;
+  }
+}
+.logo {
+  &__image {
+    display: block!important;
+
+    &--dark {
+      display: none!important;
+    }
+  }
+}
+
+.menu {
+  &__icon {
+    &-dark {
+      visibility: hidden;
+    }
+  }
+
+  &__link {
+    color: $black!important;
+
+    &:hover {
+      color: $orangey-red!important;
+    }
+  }
+}
+.menu__icon{
+  display: block!important;
+
+}
+.menu__icon-dark{
+  display: none!important;
+}

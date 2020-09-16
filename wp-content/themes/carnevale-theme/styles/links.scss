@@ -1,0 +1,18 @@
+@import "variables";
+
+a {
+  font-family: $linkFont;
+  font-size: 22px;
+  line-height: 34px;
+  letter-spacing: -0.25px;
+  outline: none;
+  text-decoration: none;
+  vertical-align: top;
+  border-bottom: 2px solid $orangey-red;
+  -webkit-tap-highlight-color: transparent;
+
+  &:hover {
+    color: $orangey-red;
+    transition: all 0.2s;
+  }
+}

@@ -1,0 +1,156 @@
+@import "variables";
+@import "mixins";
+
+.carousel {
+  position: relative;
+
+  &__slides {
+    display: flex;
+    overflow-x: scroll;
+    padding: 0;
+    scroll-snap-type: x mandatory;
+    transition: all 0.3s 0.1s;
+    &::-webkit-scrollbar {
+      height: 0;
+    }
+    .carousel__slide{
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      flex-shrink: 0;
+      scroll-snap-align: start;
+    }
+  }
+
+  &__slide {
+    width: 100%;
+    display: block;
+    position: relative;
+
+    &.fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+      to {
+        opacity: 1
+      }
+    }
+  }
+
+  &__image-wrapper {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    @include respond-to(tablets) {
+      width: 50%;
+      max-width: 303px;
+      max-height: 436px;
+    }
+    @include respond-to(desktop) {
+      width: 50%;
+      max-width: 610px;
+      max-height: 610px;
+    }
+
+  }
+
+  &__image {
+    height: 375px;
+    @include respond-to(tablets) {
+      height: 436px;
+    }
+    @include respond-to(tablets) {
+      height: 610px;
+    }
+
+  }
+
+  &__caption {
+    padding: 25px;
+    @include respond-to(tablets) {
+      width: 50%;
+      padding-bottom: 30px;
+    }
+
+    &-title {
+      margin: 0;
+      font-family: $italicFont;
+      font-size: 22px;
+      line-height: 34px;
+    }
+
+    &-subtitle {
+      margin: 0;
+      font-family: $mediumFont;
+      font-size: 27px;
+      line-height: 34px;
+      letter-spacing: -0.45px;
+    }
+  }
+
+  &__caption-button {
+    margin-top: 45px;
+    @include respond-to(tablets) {
+      display: block;
+    }
+  }
+
+  &__controls {
+    display: flex;
+    align-items: initial;
+    justify-content: space-between;
+    padding: 0 25px;
+    @include respond-to(desktop) {
+      padding: 0 50px;
+    }
+
+    @include respond-to(tablets) {
+      display: none;
+    }
+    &-slides{
+      display: flex;
+    }
+  }
+
+  &__tabs {
+    display: none;
+    @include respond-to(tablets) {
+      padding: 20px 25px 22px;
+    }
+    @include respond-to(desktop) {
+      padding: 25px 25px 25px;
+    }
+    @include respond-to(tablets) {
+      display: flex;
+      justify-content: space-between;
+      .service-carousel {
+        flex-basis: 23%;
+        max-width: 139px;
+        @include respond-to(desktop) {
+          max-width: 280px;
+        }
+      }
+    }
+  }
+}
+
+.display-none {
+  display: none;
+}

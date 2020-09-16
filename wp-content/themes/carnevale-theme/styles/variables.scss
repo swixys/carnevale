@@ -1,0 +1,50 @@
+//----fonts
+@font-face {
+  font-family: Graphik-Semibold;
+  src: url(../assets/fonts/Graphik/Graphik-Semibold-Web.woff) format('woff'),
+  url(../assets/fonts/Graphik/Graphik-Semibold-Web.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: Graphik-Medium;
+  src: url(../assets/fonts/Graphik/Graphik-Medium-Web.woff) format('woff'),
+  url(../assets/fonts/Graphik/Graphik-Medium-Web.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: TiemposHeadline-LightItalic;
+  src: url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.eot) format('embedded-opentype'),
+  url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.woff) format('woff'),
+  url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: TiemposHeadline-Light;
+  src: url(../assets/fonts/Tiempos/tiempos-text-web-regular.eot) format('embedded-opentype'),
+  url(../assets/fonts/Tiempos/tiempos-text-web-regular.woff) format('woff'),
+  url(../assets/fonts/Tiempos/tiempos-text-web-regular.woff2) format('woff2');
+}
+
+
+
+$italicFont: TiemposHeadline-LightItalic, sans-serif;
+$tiemposHeadline: TiemposHeadline-Light, sans-serif;
+$mediumFont: Graphik-Medium, sans-serif;
+$semiboldFont: Graphik-Semibold, sans-serif;
+
+$headerSemiboldFont: $semiboldFont;
+$headerMediumFont: $mediumFont;
+$h1ItalicFont: $italicFont;
+$bodyLargeFont: TiemposHeadline-Light;
+$bodyFont: TiemposText-Regular;
+$buttonFont: $mediumFont;
+$linkFont: $mediumFont;
+
+
+//----colors
+$black: #333333;
+$black03: rgba(51, 51, 51, 0.3);
+$black06: rgba(51, 51, 51, 0.6);
+$orangey-red: #f4562f;
+$white: #ffffff;
+$lightGrey: #d8d8d8;

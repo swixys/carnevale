@@ -1,0 +1,380 @@
+@import "../mixins";
+@import "../variables";
+
+.container {
+  margin: 0 auto;
+  padding-left: 25px;
+  padding-right: 25px;
+  max-width: none;
+  @include respond-to(tablets) {
+    max-width: 680px;
+  }
+  @include respond-to(desktop) {
+    max-width: 1370px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+.details-image .caption__title {
+  margin-top: 15px;
+}
+.header__menu-container{
+  max-width: none;
+}
+.about {
+  margin-bottom: 45px;
+  margin-top: 20px;
+  @include respond-to(tablets) {
+    display: flex;
+    justify-content: space-between;
+  }
+  @include respond-to(desktop) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 90px;
+    margin-top: 0px;
+  }
+
+  &:first-child {
+    @include respond-to(desktop) {
+      margin-top: 50px;
+    }
+  }
+
+  &__title, &__description {
+    @include respond-to(tablets) {
+      width: 48%;
+    }
+  }
+
+  &__title {
+    &--large {
+      margin-top: 0;
+      font-family: $mediumFont;
+      font-size: 30px;
+      font-weight: 600;
+      line-height: 1.27;
+      letter-spacing: -0.75px;
+      @include respond-to(desktop) {
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 1.13;
+        letter-spacing: -1px;
+      }
+
+    }
+
+    h1 {
+      margin-top: 0;
+      font-weight: 600;
+      line-height: 1.14;
+      letter-spacing: -2px;
+      @include respond-to(desktop) {
+        font-size: 70px;
+      }
+
+      .italic {
+        font-weight: 300;
+        line-height: 0.86;
+        letter-spacing: -1px;
+        @include respond-to(desktop) {
+          font-size: 70px;
+        }
+      }
+    }
+  }
+
+  &__description {
+    .body-large {
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+  }
+
+  .title {
+    @include respond-to(tablets) {
+      max-width: 560px;
+    }
+    @include respond-to(tablets) {
+      margin-bottom: 45px;
+    }
+
+    &__title {
+      margin: 0;
+      font-family: $italicFont;
+      font-size: 22px;
+      line-height: 34px;
+      @include respond-to(desktop) {
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 1.33;
+      }
+    }
+
+    &__subtitle {
+      margin: 0 0 45px;
+      font-family: $mediumFont;
+      font-size: 40px;
+      font-weight: 600;
+      line-height: 1.13;
+      letter-spacing: -1.14px;
+
+      @include respond-to(desktop) {
+        font-size: 55px;
+        font-weight: 600;
+        line-height: 1.09;
+        letter-spacing: -1.5px;
+      }
+    }
+  }
+
+  .social-links {
+    padding-top: 20px;
+    border-top: 1px solid $lightGrey;
+
+    .social-link {
+      vertical-align: initial;
+      margin-right: 30px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .details-image {
+    width: 100%;
+
+    &__wrapper {
+      width: 100%;
+      @include respond-to(tablets) {
+        max-height: 354px;
+        max-width: 630px;
+      }
+      @include respond-to(desktop) {
+        max-height: 714px;
+        max-width: 1270px;
+      }
+    }
+  }
+}
+
+.about-images {
+  @include respond-to(tablets) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .details-image {
+    margin-bottom: 45px;
+    @include respond-to(tablets) {
+      margin: 0 0 45px;
+      width: 48%;
+    }
+    @include respond-to(desktop) {
+      width: 48%;
+    }
+
+    &__wrapper {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      max-height: 244px;
+      max-width: none;
+      @include respond-to(tablets) {
+        max-height: 226px;
+        max-width: 302px;
+      }
+      @include respond-to(desktop) {
+        max-height: 458px;
+        max-width: 610px;
+      }
+    }
+
+    &__image {
+      height: 244px;
+      max-height: 100%;
+      object-fit: cover;
+      @include respond-to(tablets) {
+        height: auto;
+      }
+      @media only screen and (max-width: 679px) {
+       width: 100%;
+      }
+    }
+  }
+}
+
+.remarkable-clients {
+  padding-bottom: 45px;
+  padding-top: 40px;
+  margin-bottom: -18px;
+  border-top: none!important;
+  position: relative;
+  &:before{
+    position: absolute;
+    content: "";
+    top: 0;
+    height: 1px;
+    width: 100vw;
+    background: #d8d8d8;
+    left: 50%;
+    transform: translatex(-50%);
+  }
+  @include respond-to(tablets){
+    margin-bottom: -18px;
+  }
+  @include respond-to(desktop) {
+    padding-bottom: 0px;
+    padding-top: 95px;
+    margin-bottom: -19px;
+    margin-top: 50px;
+  }
+
+  &__header {
+    @include respond-to(desktop) {
+      margin-bottom: 95px;
+    }
+
+    &.about {
+      margin-top: 0;
+      margin-bottom: 25px;
+      @include respond-to(tablets) {
+      margin-bottom: 0;
+      }
+      @include respond-to(desktop) {
+        margin-bottom: 95px;
+      }
+    }
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: $mediumFont;
+    @include respond-to(tablets) {
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+    }
+    @include respond-to(desktop) {
+      font-size: 22px;
+      font-weight: 500;
+      line-height: 1.55;
+      letter-spacing: -0.25px;
+    }
+  }
+
+  &__item {
+    padding: 15px 0;
+    border-top: 1px solid $lightGrey;
+
+    @include respond-to(tablets) {
+      flex-basis: 45%;
+      margin-right: 25px;
+
+    }
+
+    @include respond-to(desktop) {
+      margin-right: 50px;
+      flex-basis: 29%;
+    }
+  }
+
+  &__link {
+    border: none;
+    letter-spacing: -0.25px;
+    font-weight: 500;
+  }
+}
+
+.footer {
+
+  @include respond-to(desktop) {
+    padding-top: 95px;
+  }
+}
+.logo {
+  &__image {
+    display: block!important;
+
+    &--dark {
+      display: none!important;
+    }
+  }
+}
+
+.menu {
+  &__icon {
+    &-dark {
+      visibility: hidden;
+    }
+  }
+
+  &__link {
+    color: $black!important;
+
+    &:hover {
+      color: $orangey-red!important;
+    }
+  }
+}
+.menu__icon{
+  display: block!important;
+
+}
+.menu__icon-dark{
+  display: none!important;
+}
+.remarkable-clients__list{
+  @include respond-to(tablets) {
+    justify-content: space-between;
+  }
+  @include respond-to(desktop) {
+    justify-content: left;
+  }
+}
+.remarkable-clients__item{
+
+
+
+
+  @include respond-to(tablets) {
+    width: 302px;
+    margin-right: 0px;
+    max-width: none;
+    flex-basis: auto;
+  }
+  @include respond-to(desktop) {
+    flex-basis: auto;
+    width: 390px;
+    margin-right: 50px;
+    &:nth-child(3n+3){
+     margin-right: 0;
+    }
+  }
+  @media only screen and (min-width: 1024px) and (max-width : 1370px) {
+    width: 29%;
+    max-width: 370px;
+  }
+
+
+}
+.remarkable-clients{
+  .about__description{
+    margin-top: 20px;
+    .body-large{
+      margin-bottom: 45px;
+    }
+    @include respond-to(tablets) {
+      margin-top: 0;
+    }
+    @include respond-to(desktop) {
+      margin-top: 0;
+      .body-large{
+        margin-bottom: 0px;
+      }
+    }
+  }
+}

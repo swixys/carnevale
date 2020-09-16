@@ -1,0 +1,57 @@
+@import "variables";
+@import "mixins";
+
+
+.form {
+  &__input {
+    border: none;
+    padding-bottom: 15px;
+    border-bottom: 2px solid $lightGrey;
+    outline: none;
+    display: block;
+    max-width: 830px;
+    width: 100%;
+    font-family: $mediumFont;
+    resize: none;
+    height: 45px;
+    max-height: 140px;
+    &:-webkit-autofill{
+      background-color: transparent!important;
+    }
+    &:focus {
+      border-color: $orangey-red;
+    }
+
+    &::placeholder {
+      color: $black;
+    }
+
+    &-message {
+      display: none;
+      color: $orangey-red;
+      padding: 0;
+      margin: 0;
+      font-family: $mediumFont;
+    }
+
+    &-wrapper {
+      margin-bottom: 40px;
+
+      &.error {
+        .form__input {
+          border-color: $orangey-red;
+
+          &-message {
+            display: block;
+          }
+        }
+      }
+    }
+
+  }
+
+  &__submit {
+    margin-top: 10px;
+  }
+
+}

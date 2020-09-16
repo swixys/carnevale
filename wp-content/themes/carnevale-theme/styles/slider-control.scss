@@ -1,0 +1,91 @@
+@import "variables";
+
+.slider-control {
+  &__prev, &__next, &__down {
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    outline: none;
+
+    &:hover {
+      .inactive {
+        display: none;
+        @media screen and (max-width: 679px) {
+          display: block;
+        }
+
+      }
+
+      .hover {
+        display: block;
+        @media screen and (max-width: 1019px) {
+          display: none;
+        }
+      }
+    }
+    &:active {
+      .inactive {
+        display: block;
+        @media screen and (max-width: 1019px) {
+          display: none;
+        }
+
+      }
+
+      .hover {
+        display: none;
+        @media screen and (max-width: 1019px) {
+          display: block;
+        }
+      }
+    }
+
+    .inactive {
+      margin: 0 auto;
+      display: block;
+    }
+
+    .hover {
+      margin: 0 auto;
+      display: none;
+    }
+  }
+
+  &__prev {
+    margin-right: 15px;
+  }
+}
+
+.close {
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  border-color: $white;
+  color: $white;
+  background-color: transparent;
+  position: absolute;
+  right: 30px!important;
+  top: 15px;
+  z-index: 1;
+  &:hover {
+    color: $orangey-red;
+    background-color: $white;
+    transition: none;
+    .inactive {
+      display: none;
+    }
+    .hover {
+      display: block;
+    }
+  }
+
+  .inactive {
+    margin: 0 auto;
+    display: block;
+  }
+
+  .hover {
+    margin: 0 auto;
+    display: none;
+  }
+}

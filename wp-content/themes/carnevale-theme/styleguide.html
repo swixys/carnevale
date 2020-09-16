@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>Styleguide</title>
+  
+  <link rel="stylesheet" href="/styles/style.css">
+
+</head>
+<body>
+<section style="margin-bottom: 60px;">
+  <h2>Typography</h2>
+  <h3>Headers</h3>
+  <ul>
+    <li>h1: <h1>Header 1</h1></li>
+    <li>h1>span.italic: <h1><span class="italic">Header 1</span></h1></li>
+    <li>h2: <h2>Header 2</h2></li>
+    <li>h3: <h3>Header 3</h3></li>
+    <li>h4: <h4>Header 4</h4></li>
+    <li>h5: <h4>Header 5</h4></li>
+    <li>.body-large: <p class="body-large">Lorem ipsum dolor sit amet.</p></li>
+    <li>body: <p>Lorem ipsum dolor sit amet.</p></li>
+  </ul>
+</section>
+<section style="margin-bottom: 60px;">
+  <h3>Primary buttons</h3>
+  <code>
+    &lt;button&gt;
+    Read more
+    &lt;/button&gt;
+  </code>
+  <div style="padding: 20px;">
+    <button>
+      Read more
+    </button>
+  </div>
+  <code>
+    &lt;button class="dark"&gt;
+    Read more
+    &lt;/button&gt;
+  </code>
+  <div style="padding: 20px; background-color: #333333;">
+    <button class="dark">
+      Read more
+    </button>
+  </div>
+</section>
+<section style="margin-bottom: 60px;">
+  <h3>Text links</h3>
+  <code>
+    &lt;a href="#"&gt;App Store&lt;/a&gt;
+  </code>
+  <a href="#">App Store</a>
+</section>
+<section style="margin-bottom: 60px;">
+  <h3>service carousel</h3>
+  <code>
+    <pre>
+    &lt;a href="#" class="service-carousel"&gt;
+        &lt;p class="service-carousel__title"&gt;Service&lt;/p&gt;
+        &lt;p class="service-carousel__description"&gt;Extended reality&lt;/p&gt;
+    &lt;/a&gt;
+      </pre>
+  </code>
+  <div>
+    
+    <a href="#" class="service-carousel">
+      <p class="service-carousel__title">Service</p>
+      <p class="service-carousel__description">Extended reality</p>
+    </a>
+  </div>
+</section>
+
+<section style="margin-bottom: 60px;">
+  <h3>slider controls</h3>
+  <code>
+    <pre>
+    &lt;button class="slider-control__prev"&gt;
+        &lt;img class="inactive" src="/assets/icons/chevron-left.svg"&gt;
+        &lt;img class="hover" src="/assets/icons/chevron-left-reversed.svg"&gt;
+    &lt;/button&gt;
+    &lt;button class="slider-control__next"&gt;
+        &lt;img class="inactive" src="/assets/icons/chevron-right.svg"&gt;
+        &lt;img class="hover" src="/assets/icons/chevron-right-reversed.svg"&gt;
+    &lt;/button&gt;
+      </pre>
+  </code>
+  <div>
+    <button class="slider-control__prev">
+      <img class="inactive" src="/assets/icons/chevron-left.svg">
+      <img class="hover" src="/assets/icons/chevron-left-reversed.svg">
+    </button>
+    <button class="slider-control__next">
+      <img class="inactive" src="/assets/icons/chevron-right.svg">
+      <img class="hover" src="/assets/icons/chevron-right-reversed.svg">
+    </button>
+  </div>
+  <code>
+    <pre>
+    &lt;button class="dark slider-control__prev"&gt;
+        &lt;img class="inactive" src="/assets/icons/chevron-left-reversed.svg"&gt;
+        &lt;img class="hover" src="/assets/icons/chevron-left-red.svg"&gt;
+    &lt;/button&gt;
+    &lt;button class="dark slider-control__next"&gt;
+       &lt;img class="inactive" src="/assets/icons/chevron-right-reversed.svg"&gt;
+       &lt;img class="hover" src="/assets/icons/chevron-right-red.svg"&gt;
+    &lt;/button&gt;
+      </pre>
+  </code>
+  <div style="padding: 20px; background-color: #333333;">
+    <button class="dark slider-control__prev">
+      <img class="inactive" src="/assets/icons/chevron-left-reversed.svg">
+      <img class="hover" src="/assets/icons/chevron-left-red.svg">
+    </button>
+    <button class="dark slider-control__next">
+      <img class="inactive" src="/assets/icons/chevron-right-reversed.svg">
+      <img class="hover" src="/assets/icons/chevron-right-red.svg">
+    </button>
+  </div>
+</section>
+<section style="margin-bottom: 60px;">
+  <h3>
+    Selectable Tiles with Text Below Images
+  </h3>
+  <code>
+  <pre>
+    &lt;a href="#" class="caption"&gt;
+      &lt;p class="caption__title"&gt;GolfLogix&lt;/p&gt;
+      &lt;p class="caption__description"&gt;The most downloaded app in golf&lt;/p&gt;
+    &lt;/a&gt;
+  </pre>
+  </code>
+  <div>
+    <a href="#" class="caption">
+      <p class="caption__title">GolfLogix</p>
+      <p class="caption__description">The most downloaded app in golf</p>
+    </a>
+  </div>
+</section>
+<section style="margin-bottom: 60px;">
+  <h3>social links</h3>
+  <code>
+    <pre>
+    &lt;p class="social-links"&gt;
+      &lt;span&gt;Share:&lt;/span&gt;
+      &lt;a href="#" class="social-link"&gt;
+        &lt;img src="/assets/icons/facebook.svg" alt="facebook" class="inactive"&gt;
+        &lt;img src="/assets/icons/facebook-hover.svg" alt="facebook" class="hover"&gt;
+      &lt;/a&gt;
+      &lt;a href="#" class="social-link"&gt;
+        &lt;img src="/assets/icons/linked-in.svg" alt="linkedin" class="inactive"&gt;
+        &lt;img src="/assets/icons/linked-in-hover.svg" alt="linkedin" class="hover"&gt;
+      &lt;/a&gt;
+      &lt;a href="#" class="social-link"&gt;
+        &lt;img src="/assets/icons/twitter.svg" alt="twitter" class="inactive"&gt;
+        &lt;img src="/assets/icons/twitter-hover.svg" alt="twitter" class="hover"&gt;
+      &lt;/a&gt;
+      &lt;a href="#" class="social-link"&gt;
+        &lt;img src="/assets/icons/email.svg" alt="mail" class="inactive"&gt;
+        &lt;img src="/assets/icons/email-hover.svg" alt="mail" class="hover"&gt;
+      &lt;/a&gt;
+      &lt;a href="#" class="social-link"&gt;
+        &lt;img src="/assets/icons/instagram.svg" alt="mail" class="inactive"&gt;
+        &lt;img src="/assets/icons/email-hover.svg" alt="mail" class="hover"&gt;
+      &lt;/a&gt;
+    &lt;/p&gt;
+      </pre>
+  </code>
+  <p class="social-links">
+    <span>Share:</span>
+    <a href="#" class="social-link">
+      <img src="/assets/icons/facebook.svg" alt="facebook" class="inactive">
+      <img src="/assets/icons/facebook-hover.svg" alt="facebook" class="hover">
+    </a>
+    <a href="#" class="social-link">
+      <img src="/assets/icons/instagram.svg" alt="instagram" class="inactive">
+      <img src="/assets/icons/instagram-hover.svg" alt="instagram" class="hover">
+    </a>
+    <a href="#" class="social-link">
+      <img src="/assets/icons/linked-in.svg" alt="linkedin" class="inactive">
+      <img src="/assets/icons/linked-in-hover.svg" alt="linkedin" class="hover">
+    </a>
+    <a href="#" class="social-link">
+      <img src="/assets/icons/twitter.svg" alt="twitter" class="inactive">
+      <img src="/assets/icons/twitter-hover.svg" alt="twitter" class="hover">
+    </a>
+    <a href="#" class="social-link">
+      <img src="/assets/icons/email.svg" alt="mail" class="inactive">
+      <img src="/assets/icons/email-hover.svg" alt="mail" class="hover">
+    </a>
+  </p>
+</section>
+
+
+<section style="margin-bottom: 60px;">
+  <h3>header menu</h3>
+  <code>
+    <pre>
+    &lt;header class="header"&gt;
+      &lt;div class="header__menu"&gt;
+        &lt;div class="logo"&gt;
+          &lt;img src="/assets/images/carnevale-logo-desktop.svg" alt="logo" class="logo__image"&gt;
+          &lt;img src="/assets/images/carnevale-logo-reversed.svg" alt="logo" class="logo__image--dark"&gt;
+        &lt;/div&gt;
+        &lt;nav class="menu"&gt;
+          &lt;button
+                  class="menu__button"
+                  onclick="toggleMenu()"
+                  aria-expanded="false"
+                  aria-controls="menu__list"
+          &gt;
+            &lt;img
+                    src="/assets/icons/menu-icon-close.svg"
+                    aria-hidden="true"
+                    class="menu__button--open"
+            &gt;
+            &lt;img
+                    src="/assets/icons/menu-icon.svg"
+                    aria-hidden="true"
+                    class="menu__icon menu__button--close "
+            &gt;
+            &lt;img
+                    src="/assets/icons/menu-icon-dark.svg"
+                    aria-hidden="true"
+                    class="menu__icon-dark menu__button--close "
+            &gt;
+          &lt;/button&gt;
+          &lt;div class="menu__wrapper"&gt;
+            &lt;ul id="menu__list" class="menu__list"&gt;
+              &lt;li class="menu__item"&gt;&lt;a href="#" class="menu__link"&gt;Services&lt;/a&gt;&lt;/li&gt;
+              &lt;li class="menu__item"&gt;&lt;a href="#" class="menu__link"&gt;Case studies&lt;/a&gt;&lt;/li&gt;
+              &lt;li class="menu__item"&gt;&lt;a href="#" class="menu__link"&gt;Studio&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;ul class="menu__social"&gt;
+              &lt;li class="menu__social-item"&gt;
+                &lt;a href="#" class="social-link"&gt;
+                  &lt;img src="/assets/icons/facebook.svg" alt="facebook" class="inactive"&gt;
+                  &lt;img src="/assets/icons/facebook-hover.svg" alt="facebook" class="hover"&gt;
+                &lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li class="menu__social-item"&gt;
+                &lt;a href="#" class="social-link"&gt;
+                  &lt;img src="/assets/icons/linked-in.svg" alt="linkedin" class="inactive"&gt;
+                  &lt;img src="/assets/icons/linked-in-hover.svg" alt="linkedin" class="hover"&gt;
+                &lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li class="menu__social-item"&gt;
+                &lt;a href="#" class="social-link"&gt;
+                  &lt;img src="/assets/icons/twitter.svg" alt="twitter" class="inactive"&gt;
+                  &lt;img src="/assets/icons/twitter-hover.svg" alt="twitter" class="hover"&gt;
+                &lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li class="menu__social-item"&gt;
+                &lt;a href="#" class="social-link"&gt;
+                  &lt;img src="/assets/icons/email.svg" alt="mail" class="inactive"&gt;
+                  &lt;img src="/assets/icons/email-hover.svg" alt="mail" class="hover"&gt;
+                &lt;/a&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/div&gt;
+        &lt;/nav&gt;
+      &lt;/div&gt;
+    &lt;/header&gt;
+      </pre>
+  </code>
+  <div>
+    <header class="header">
+      <div class="header__menu">
+        <div class="logo">
+          <img src="/assets/images/carnevale-logo-desktop.svg" alt="logo" class="logo__image">
+          <img src="/assets/images/carnevale-logo-reversed.svg" alt="logo" class="logo__image--dark">
+        </div>
+        <nav class="menu">
+          <button
+                  class="menu__button"
+                  onclick="toggleMenu()"
+                  aria-expanded="false"
+                  aria-controls="menu__list"
+          >
+            <img
+                    src="/assets/icons/menu-icon-close.svg"
+                    aria-hidden="true"
+                    class="menu__button--open"
+            >
+            <img
+                    src="/assets/icons/menu-icon.svg"
+                    aria-hidden="true"
+                    class="menu__icon menu__button--close "
+            >
+            <img
+                    src="/assets/icons/menu-icon-dark.svg"
+                    aria-hidden="true"
+                    class="menu__icon-dark menu__button--close "
+            >
+          </button>
+          <div class="menu__wrapper">
+            <ul id="menu__list" class="menu__list">
+              <li class="menu__item"><a href="#" class="menu__link">Services</a></li>
+              <li class="menu__item"><a href="#" class="menu__link">Case studies</a></li>
+              <li class="menu__item"><a href="#" class="menu__link">Studio</a></li>
+            </ul>
+            <ul class="menu__social">
+              <li class="menu__social-item">
+                <a href="#" class="social-link">
+                  <img src="/assets/icons/facebook.svg" alt="facebook" class="inactive">
+                  <img src="/assets/icons/facebook-hover.svg" alt="facebook" class="hover">
+                </a>
+              </li>
+              <li class="menu__social-item">
+                <a href="#" class="social-link">
+                  <img src="/assets/icons/linked-in.svg" alt="linkedin" class="inactive">
+                  <img src="/assets/icons/linked-in-hover.svg" alt="linkedin" class="hover">
+                </a>
+              </li>
+              <li class="menu__social-item">
+                <a href="#" class="social-link">
+                  <img src="/assets/icons/twitter.svg" alt="twitter" class="inactive">
+                  <img src="/assets/icons/twitter-hover.svg" alt="twitter" class="hover">
+                </a>
+              </li>
+              <li class="menu__social-item">
+                <a href="#" class="social-link">
+                  <img src="/assets/icons/email.svg" alt="mail" class="inactive">
+                  <img src="/assets/icons/email-hover.svg" alt="mail" class="hover">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+  </div>
+  <code>
+    <pre>
+     &lt;header class="header"&gt;
+      &lt;div class="header__menu dark"&gt;
+        &lt;div class="logo"&gt;
+          &lt;img src="/assets/images/carnevale-logo-desktop.svg" alt="logo" class="logo__image"&gt;
+          &lt;img src="/assets/images/carnevale-logo-reversed.svg" alt="logo" class="logo__image--dark"&gt;
+        &lt;/div&gt;
+        &lt;nav class="menu"&gt;
+          &lt;button
+                  class="menu__button"
+                  onclick="toggleMenu()"
+                  aria-expanded="false"
+                  aria-controls="menu__list"
+          &gt;
+            &lt;img
+                    src="/assets/icons/menu-icon-close.svg"
+                    aria-hidden="true"
+                    class="menu__button--open"
+            &gt;
+            &lt;img
+                    src="/assets/icons/menu-icon.svg"
+                    aria-hidden="true"
+                    class="menu__icon menu__button--close "
+            &gt;
+            &lt;img
+                    src="/assets/icons/menu-icon-dark.svg"
+                    aria-hidden="true"
+                    class="menu__icon-dark menu__button--close "
+            &gt;
+          &lt;/button&gt;
+          &lt;div class="menu__wrapper"&gt;
+            &lt;ul id="menu__list" class="menu__list"&gt;
+              &lt;li class="menu__item"&gt;&lt;a href="#" class="menu__link"&gt;Services&lt;/a&gt;&lt;/li&gt;
+              &lt;li class="menu__item"&gt;&lt;a href="#" class="menu__link"&gt;Case studies&lt;/a&gt;&lt;/li&gt;
+              &lt;li class="menu__item"&gt;&lt;a href="#" class="menu__link"&gt;Studio&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;ul class="menu__social"&gt;
+              &lt;li class="menu__social-item"&gt;
+                &lt;a href="#" class="social-link"&gt;
+                  &lt;img src="/assets/icons/facebook.svg" alt="facebook" class="inactive"&gt;
+                  &lt;img src="/assets/icons/facebook-hover.svg" alt="facebook" class="hover"&gt;
+                &lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li class="menu__social-item"&gt;
+                &lt;a href="#" class="social-link"&gt;
+                  &lt;img src="/assets/icons/linked-in.svg" alt="linkedin" class="inactive"&gt;
+                  &lt;img src="/assets/icons/linked-in-hover.svg" alt="linkedin" class="hover"&gt;
+                &lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li class="menu__social-item"&gt;
+                &lt;a href="#" class="social-link"&gt;
+                  &lt;img src="/assets/icons/twitter.svg" alt="twitter" class="inactive"&gt;
+                  &lt;img src="/assets/icons/twitter-hover.svg" alt="twitter" class="hover"&gt;
+                &lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li class="menu__social-item"&gt;
+                &lt;a href="#" class="social-link"&gt;
+                  &lt;img src="/assets/icons/email.svg" alt="mail" class="inactive"&gt;
+                  &lt;img src="/assets/icons/email-hover.svg" alt="mail" class="hover"&gt;
+                &lt;/a&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/div&gt;
+        &lt;/nav&gt;
+      &lt;/div&gt;
+    &lt;/header&gt;
+    </pre>
+  </code>
+  <div style="background-color: #333333;">
+    <header class="header">
+      <div class="header__menu dark">
+        <div class="logo">
+          <img src="/assets/images/carnevale-logo-desktop.svg" alt="logo" class="logo__image">
+          <img src="/assets/images/carnevale-logo-reversed.svg" alt="logo" class="logo__image--dark">
+        </div>
+        <nav class="menu">
+          <button
+                  class="menu__button"
+                  onclick="toggleMenu()"
+                  aria-expanded="false"
+                  aria-controls="menu__list"
+          >
+            <img
+                    src="/assets/icons/menu-icon-close.svg"
+                    aria-hidden="true"
+                    class="menu__button--open"
+            >
+            <img
+                    src="/assets/icons/menu-icon.svg"
+                    aria-hidden="true"
+                    class="menu__icon menu__button--close "
+            >
+            <img
+                    src="/assets/icons/menu-icon-dark.svg"
+                    aria-hidden="true"
+                    class="menu__icon-dark menu__button--close "
+            >
+          </button>
+          <div class="menu__wrapper">
+            <ul id="menu__list" class="menu__list">
+              <li class="menu__item"><a href="#" class="menu__link">Services</a></li>
+              <li class="menu__item"><a href="#" class="menu__link">Case studies</a></li>
+              <li class="menu__item"><a href="#" class="menu__link">Studio</a></li>
+            </ul>
+            <ul class="menu__social">
+              <li class="menu__social-item">
+                <a href="#" class="social-link">
+                  <img src="/assets/icons/facebook.svg" alt="facebook" class="inactive">
+                  <img src="/assets/icons/facebook-hover.svg" alt="facebook" class="hover">
+                </a>
+              </li>
+              <li class="menu__social-item">
+                <a href="#" class="social-link">
+                  <img src="/assets/icons/linked-in.svg" alt="linkedin" class="inactive">
+                  <img src="/assets/icons/linked-in-hover.svg" alt="linkedin" class="hover">
+                </a>
+              </li>
+              <li class="menu__social-item">
+                <a href="#" class="social-link">
+                  <img src="/assets/icons/twitter.svg" alt="twitter" class="inactive">
+                  <img src="/assets/icons/twitter-hover.svg" alt="twitter" class="hover">
+                </a>
+              </li>
+              <li class="menu__social-item">
+                <a href="#" class="social-link">
+                  <img src="/assets/icons/email.svg" alt="mail" class="inactive">
+                  <img src="/assets/icons/email-hover.svg" alt="mail" class="hover">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+  </div>
+</section>
+
+
+</body>
+<script src="/scripts/script.js"></script>
+
+</html>

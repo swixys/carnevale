@@ -1,0 +1,40 @@
+@import "variables";
+.social-links{
+  font-family: $mediumFont;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.2px;
+  span{
+    padding-right: 24px;
+  }
+}
+.about .about__title .social-links{
+  padding-top: 16px;
+}
+.social-link {
+  border: none;
+
+  &:hover {
+    .inactive {
+      display: none;
+    }
+
+    .hover {
+      display: inline-block;
+    }
+  }
+
+  .inactive {
+    margin: 0 auto;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+  }
+
+  .hover {
+    margin: 0 auto;
+    display: none;
+    width: 18px;
+    height: 18px;
+  }
+}

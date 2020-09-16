@@ -1,0 +1,253 @@
+@import "mixins";
+@import "variables";
+
+.main, .container {
+  max-width: 1370px;
+  margin: 0 auto;
+}
+
+.container {
+  @include respond-to(desktop) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+.about {
+  @include respond-to(desktop) {
+    padding-bottom: 95px;
+    border-bottom: 1px solid $lightGrey;
+    margin-bottom: 95px;
+  }
+
+  &__header {
+    h1 {
+      text-align: center;
+      margin: 40px 0;
+
+      .italic {
+        display: block;
+        @include respond-to(tablets) {
+          display: unset;
+        }
+      }
+    }
+  }
+
+  &__container {
+    margin: 0 25px;
+    @include respond-to(desktop) {
+      margin: 0 auto;
+      width: 830px;
+    }
+  }
+
+  &__content {
+    text-align: center;
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 300;
+    letter-spacing: -0.1px;
+
+    a {
+      font-weight: 500;
+    }
+
+    @include respond-to(desktop) {
+      font-size: 30px;
+      line-height: 42px;
+      letter-spacing: -0.25px;
+      a {
+        font-size: 30px;
+        line-height: 42px;
+        letter-spacing: -0.25px;
+      }
+    }
+  }
+}
+
+.services {
+  margin-bottom: 45px;
+}
+
+.additional-services {
+  @include respond-to(desktop) {
+    margin-bottom: 95px;
+  }
+
+  .carousel {
+    position: relative;
+
+    &__controls {
+      width: 100%;
+      position: absolute;
+      bottom: 50px;
+      @include respond-to(desktop) {
+        display: flex;
+      }
+
+      &-slides {
+        @include respond-to(tablets) {
+          display: block;
+        }
+      }
+    }
+
+    &__image-wrapper {
+      overflow: hidden;
+      @include respond-to(tablets) {
+        width: auto;
+        height: auto;
+        max-width: initial;
+      }
+    }
+
+    &__image {
+      @include respond-to(tablets) {
+        height: auto;
+        max-width: 100%;
+      }
+    }
+  }
+
+  .caption {
+    position: absolute;
+    bottom: 120px;
+    left: 25px;
+    @include respond-to(tablets) {
+      width: 346px;
+    }
+    @include respond-to(desktop) {
+      width: 610px;
+      left: 50px;
+    }
+
+    &__description {
+      @include respond-to(tablets) {
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 1.27;
+        letter-spacing: -0.82px;
+      }
+      @include respond-to(desktop) {
+        font-size: 55px;
+        font-weight: 600;
+        line-height: 1.09;
+        letter-spacing: -1.5px;
+      }
+    }
+
+    &__title, &__description {
+      color: $white
+    }
+  }
+}
+
+.sponsors {
+  padding: 0 25px;
+  @include respond-to(desktop) {
+    border-bottom: 1px solid $lightGrey;
+  }
+
+  &__description {
+    text-align: center;
+    @include respond-to(desktop) {
+      max-width: 830px;
+      margin: 0 auto 95px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @include respond-to(desktop) {
+      flex-wrap: nowrap;
+      justify-content: center;
+    }
+  }
+
+  &__item {
+    width: 49%;
+    margin-bottom: 50px;
+    @include respond-to(tablets) {
+      width: 32%;
+    }
+    @include respond-to(desktop) {
+      width: auto;
+    }
+  }
+
+  &__image {
+    width: 100%;
+  }
+}
+
+.footer {
+  padding: 45px 25px;
+  border-top: 1px solid $lightGrey;
+
+  @include respond-to(desktop) {
+    padding: 0 50px;
+    border: none;
+    margin: 95px auto 50px;
+  }
+
+  &__links {
+    @include respond-to(tablets) {
+      display: flex;
+      align-items: flex-start;
+    }
+  }
+
+  &__social {
+    display: flex;
+    justify-content: flex-start;
+    @include respond-to(desktop) {
+      justify-content: flex-end;
+    }
+
+    .social-link {
+      margin-right: 30px;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+
+  .links-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    @include respond-to(tablets) {
+      margin-right: 10%;
+      min-width: 25%;
+    }
+
+    a {
+      margin-bottom: 15px;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    &:last-child {
+      margin-top: 40px;
+      @include respond-to(tablets) {
+        margin: 0;
+      }
+    }
+  }
+
+}
+.about__header h1 {
+  text-align: center;
+  margin: 35px 0;
+  margin-bottom: 35px;
+  @include respond-to(desktop) {
+    margin: 95px 0;
+    margin-bottom: 40px;
+  }
+}

@@ -1,0 +1,191 @@
+@import "mixins";
+@import "variables";
+
+.menu {
+
+  &__button {
+    border: none;
+    border-radius: initial;
+    background-color: transparent;
+    padding: 0;
+    height: 22px;
+    width: 25px;
+    position: relative;
+    outline: none;
+    @include respond-to(tablets) {
+      display: none;
+    }
+
+    &:hover {
+      background-color: transparent;
+    }
+
+    &--open {
+      position: absolute;
+      transition: transform 250ms cubic-bezier(.2, .6, .3, 1), width 250ms cubic-bezier(.2, .6, .3, 1);
+      visibility: hidden;
+      transform: scaleX(0);
+    }
+
+    &--close {
+      position: absolute;
+      transition: transform 250ms cubic-bezier(.2, .6, .3, 1), width 250ms cubic-bezier(.2, .6, .3, 1);
+      visibility: visible;
+      transform: scaleX(1);
+    }
+
+    img {
+      top: 0;
+      left: 0;
+      margin-top: 5px;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &__icon {
+    &-dark {
+      display: none;
+    }
+  }
+
+  &__wrapper {
+    visibility: hidden;
+    position: fixed;
+    top: 82px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $white;
+    opacity: 0;
+    transition: all 0.3s;
+
+    @include respond-to(tablets) {
+      display: block;
+      position: static;
+      opacity: 1;
+      background-color: transparent;
+      visibility: visible;
+    }
+  }
+
+  &__list {
+    margin: 0;
+    flex: 1 1 auto;
+    display: flex;
+    display: -ms-flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    padding: 25px 0 25px 30px;
+    transition: all 0.3s ease-out;
+    @include respond-to(tablets) {
+      flex-direction: row;
+    }
+  }
+
+  &__item {
+    margin-bottom: 15px;
+    font-family: $semiboldFont;
+    display: flex;
+    align-items: center;
+    @include respond-to(tablets) {
+      margin: 0 30px 0 0;
+    }
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  &__link {
+    border: none;
+    font-size: 30px;
+    line-height: 38px;
+    font-weight: 600;
+    @media only screen and (max-width : 679px) {
+      letter-spacing: -1.75px!important;
+    }
+    @include respond-to(tablets) {
+      font-size: 18px;
+      line-height: unset;
+      letter-spacing: -0.2px;
+      font-weight: 500;
+    }
+    @include respond-to(desktop) {
+      font-size: 22px;
+      line-height: 25px;
+      letter-spacing: -0.25px;
+    }
+  }
+
+  &__social {
+    list-style: none;
+    padding: 0 25px;
+    display: flex;
+    display: -ms-flex;
+    transform: translateY(-30px);
+    transition: all 0.3s ease-out;
+    @include respond-to(tablets) {
+      display: none;
+    }
+  }
+
+  &__social-item {
+    margin-right: 30px;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+  .menu {
+    button {
+      border: none !important;
+      &:hover {
+        border: none !important;
+      }
+    }
+  }
+  &.open {
+    .menu {
+      &__button {
+        outline: none;
+        &--open {
+          position: absolute;
+          transition: transform 250ms cubic-bezier(.2, .6, .3, 1), width 250ms cubic-bezier(.2, .6, .3, 1); //display: block;
+          visibility: visible;
+          transform: scaleX(1);
+        }
+
+        &--close {
+          position: absolute;
+          transition: transform 250ms cubic-bezier(.2, .6, .3, 1), width 250ms cubic-bezier(.2, .6, .3, 1);
+          visibility: hidden;
+          transform: scaleX(0);
+
+        }
+      }
+
+      &__list {
+        transform: translateY(0);
+        transition: all 0.3s ease-out;
+      }
+
+      &__social {
+        transform: translateY(0);
+        transition: all 0.3s ease-out;
+      }
+
+      &__wrapper {
+        display: flex;
+        display: -ms-flex;
+        flex-direction: column;
+        visibility: visible;
+        opacity: 1;
+        transition: all 0.3s;
+      }
+    }
+  }
+}

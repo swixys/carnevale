@@ -1,0 +1,56 @@
+@import "mixins";
+@import "variables";
+
+.video {
+  position: relative;
+  width: 100%;
+  transition: all 0.3s;
+
+  &:hover {
+    transition: all 0.3s;
+
+    .video__button {
+      visibility: visible;
+    }
+  }
+
+  &__media {
+    width: 100%;
+  }
+
+  &__button {
+    visibility: hidden;
+    background-color: transparent;
+    border: none;
+    border-radius: unset;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    width: auto;
+    outline: none;
+
+    &:hover {
+      background-color: transparent;
+
+      .inactive {
+        display: none;
+      }
+
+      .hover {
+        display: block;
+      }
+    }
+
+    .inactive {
+      margin: 0 auto;
+      display: block;
+    }
+
+    .hover {
+      margin: 0 auto;
+      display: none;
+    }
+  }
+}

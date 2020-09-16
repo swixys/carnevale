@@ -1,0 +1,40 @@
+@import "variables";
+@import "mixins";
+
+.caption {
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    .caption__description {
+      transition: all 0.2s;
+      color: $orangey-red;
+    }
+  }
+
+  &__title {
+    font-family: $italicFont;
+    font-size: 18px;
+    line-height: 34px;
+    letter-spacing: 0;
+    font-weight: 300;
+    margin: 0;
+    @include respond-to(desktop) {
+      font-size: 22px;
+    }
+
+  }
+
+  &__description {
+    font-family: $mediumFont;
+    font-size: 22px;
+    line-height: 30px;
+    letter-spacing: -0.45px;
+    font-weight: 500;
+    margin: 0;
+    @include respond-to(desktop) {
+      font-size: 27px;
+      line-height: 34px;
+    }
+  }
+}

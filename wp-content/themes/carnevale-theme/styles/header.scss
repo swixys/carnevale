@@ -1,0 +1,180 @@
+@import "variables";
+@import "mixins";
+
+.header {
+  height: 82px;
+  position: relative;
+  z-index: 2;
+  @include respond-to(tablets) {
+    height: 85px;
+  }
+  @include respond-to(desktop) {
+    height: 125px;
+  }
+
+  &__menu-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    height: 82px;
+    padding: 30px 25px;
+    display: flex;
+    align-items: center;
+    display: -ms-flex;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    @include respond-to(tablets) {
+      height: 85px;
+    }
+    @include respond-to(desktop) {
+      height: 125px;
+    }
+
+    @include respond-to(tablets) {
+      max-width: 680px;
+    }
+    @include respond-to(desktop) {
+      max-width: 1370px;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  }
+
+  &__menu {
+    height: 100%;
+
+    &.dark {
+
+      .logo {
+        &__image {
+          display: none;
+
+          &--dark {
+            display: block;
+          }
+        }
+      }
+
+      .menu {
+        &__icon {
+          &-dark {
+            display: block;
+          }
+        }
+
+        &__link {
+          color: $white;
+
+          &:hover {
+            color: $orangey-red;
+          }
+        }
+      }
+    }
+
+    &.open {
+
+      &.dark {
+        background-color: $white;
+        transition: all 0.3s;
+
+        .logo {
+          &__image {
+            display: block;
+
+            &--dark {
+              display: none;
+            }
+          }
+        }
+
+        .menu {
+          &__link {
+            color: $black;
+          }
+        }
+      }
+    }
+
+    &.sticky {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: $white;
+      z-index: 100;
+      height: 82px;
+      @include respond-to(tablets) {
+        height: 85px;
+      }
+      @include respond-to(desktop) {
+        height: 85px;
+      }
+      .header__menu-container{
+        @include respond-to(desktop) {
+          height: 85px;
+        }
+      }
+      &.dark {
+        .logo {
+          &__image {
+            display: block;
+
+            &--dark {
+              display: none;
+            }
+          }
+        }
+
+        .menu {
+          &__icon {
+            &-dark {
+              visibility: hidden;
+            }
+          }
+
+          &__link {
+            color: $black;
+
+            &:hover {
+              color: $orangey-red
+            }
+          }
+        }
+
+        &.open {
+          .menu__icon, .menu__icon-dark {
+            visibility: hidden;
+          }
+        }
+      }
+    }
+  }
+}
+
+.logo {
+  height: 22px;
+  width: 149px;
+  @include respond-to(desktop) {
+    height: 25px;
+    width: 170px;
+  }
+
+  &__image {
+    &--dark {
+      display: none;
+    }
+  }
+
+  &__image, &__image--dark {
+    width: 100%;
+    height: 100%;
+  }
+
+  a {
+    border: none;
+  }
+}
