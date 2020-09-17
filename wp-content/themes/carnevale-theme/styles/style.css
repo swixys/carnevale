@@ -1645,6 +1645,10 @@ a:hover {
   src: url(../assets/fonts/Tiempos/tiempos-text-web-regular.eot) format("embedded-opentype"), url(../assets/fonts/Tiempos/tiempos-text-web-regular.woff) format("woff"), url(../assets/fonts/Tiempos/tiempos-text-web-regular.woff2) format("woff2");
 }
 
+* {
+  -webkit-font-smoothing: antialiased;
+}
+
 .page__body.no-scroll {
   overflow: hidden;
 }

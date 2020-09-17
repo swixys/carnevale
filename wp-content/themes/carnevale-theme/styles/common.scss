@@ -1,6 +1,10 @@
 @import "variables";
 @import "mixins";
 
+* {
+  -webkit-font-smoothing: antialiased;
+}
+
 .page {
   &__body {
     &.no-scroll {
