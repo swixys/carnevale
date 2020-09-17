@@ -1,0 +1,236 @@
+@font-face {
+  font-family: Graphik-Semibold;
+  src: url(../assets/fonts/Graphik/Graphik-Semibold-Web.woff) format("woff"), url(../assets/fonts/Graphik/Graphik-Semibold-Web.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: Graphik-Medium;
+  src: url(../assets/fonts/Graphik/Graphik-Medium-Web.woff) format("woff"), url(../assets/fonts/Graphik/Graphik-Medium-Web.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: TiemposHeadline-LightItalic;
+  src: url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.eot) format("embedded-opentype"), url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.woff) format("woff"), url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: TiemposHeadline-Light;
+  src: url(../assets/fonts/Tiempos/tiempos-text-web-regular.eot) format("embedded-opentype"), url(../assets/fonts/Tiempos/tiempos-text-web-regular.woff) format("woff"), url(../assets/fonts/Tiempos/tiempos-text-web-regular.woff2) format("woff2");
+}
+
+.carousel {
+  position: relative;
+}
+
+.carousel__slides {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: scroll;
+  padding: 0;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+  -webkit-transition: all 0.3s 0.1s;
+  transition: all 0.3s 0.1s;
+}
+
+.carousel__slides::-webkit-scrollbar {
+  height: 0;
+}
+
+.carousel__slides .carousel__slide {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  scroll-snap-align: start;
+}
+
+.carousel__slide {
+  width: 100%;
+  display: block;
+  position: relative;
+}
+
+.carousel__slide.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.carousel__image-wrapper {
+  width: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (min-width: 680px) {
+  .carousel__image-wrapper {
+    width: 50%;
+    max-width: 303px;
+    max-height: 436px;
+  }
+}
+
+@media only screen and (min-width: 1020px) {
+  .carousel__image-wrapper {
+    width: 50%;
+    max-width: 610px;
+    max-height: 610px;
+  }
+}
+
+.carousel__image {
+  height: 375px;
+}
+
+@media only screen and (min-width: 680px) {
+  .carousel__image {
+    height: 436px;
+  }
+}
+
+@media only screen and (min-width: 680px) {
+  .carousel__image {
+    height: 610px;
+  }
+}
+
+.carousel__caption {
+  padding: 25px;
+}
+
+@media only screen and (min-width: 680px) {
+  .carousel__caption {
+    width: 50%;
+    padding-bottom: 30px;
+  }
+}
+
+.carousel__caption-title {
+  margin: 0;
+  font-family: TiemposHeadline-LightItalic, sans-serif;
+  font-size: 22px;
+  line-height: 34px;
+}
+
+.carousel__caption-subtitle {
+  margin: 0;
+  font-family: Graphik-Medium, sans-serif;
+  font-size: 27px;
+  line-height: 34px;
+  letter-spacing: -0.45px;
+}
+
+.carousel__caption-button {
+  margin-top: 45px;
+}
+
+@media only screen and (min-width: 680px) {
+  .carousel__caption-button {
+    display: block;
+  }
+}
+
+.carousel__controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: initial;
+      -ms-flex-align: initial;
+          align-items: initial;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 25px;
+}
+
+@media only screen and (min-width: 1020px) {
+  .carousel__controls {
+    padding: 0 50px;
+  }
+}
+
+@media only screen and (min-width: 680px) {
+  .carousel__controls {
+    display: none;
+  }
+}
+
+.carousel__controls-slides {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.carousel__tabs {
+  display: none;
+}
+
+@media only screen and (min-width: 680px) {
+  .carousel__tabs {
+    padding: 20px 25px 22px;
+  }
+}
+
+@media only screen and (min-width: 1020px) {
+  .carousel__tabs {
+    padding: 25px 25px 25px;
+  }
+}
+
+@media only screen and (min-width: 680px) {
+  .carousel__tabs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .carousel__tabs .service-carousel {
+    -ms-flex-preferred-size: 23%;
+        flex-basis: 23%;
+    max-width: 139px;
+  }
+}
+
+@media only screen and (min-width: 680px) and (min-width: 1020px) {
+  .carousel__tabs .service-carousel {
+    max-width: 280px;
+  }
+}
+
+.display-none {
+  display: none;
+}
+/*# sourceMappingURL=carousel.css.map */

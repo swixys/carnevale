@@ -1,0 +1,171 @@
+@font-face {
+  font-family: Graphik-Semibold;
+  src: url(../assets/fonts/Graphik/Graphik-Semibold-Web.woff) format("woff"), url(../assets/fonts/Graphik/Graphik-Semibold-Web.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: Graphik-Medium;
+  src: url(../assets/fonts/Graphik/Graphik-Medium-Web.woff) format("woff"), url(../assets/fonts/Graphik/Graphik-Medium-Web.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: TiemposHeadline-LightItalic;
+  src: url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.eot) format("embedded-opentype"), url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.woff) format("woff"), url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: TiemposHeadline-Light;
+  src: url(../assets/fonts/Tiempos/tiempos-text-web-regular.eot) format("embedded-opentype"), url(../assets/fonts/Tiempos/tiempos-text-web-regular.woff) format("woff"), url(../assets/fonts/Tiempos/tiempos-text-web-regular.woff2) format("woff2");
+}
+
+.footer {
+  padding: 45px 25px;
+  padding-bottom: 50px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.footer:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  height: 1px;
+  width: 100vw;
+  background: #d8d8d8;
+  left: 50%;
+  -webkit-transform: translatex(-50%);
+          transform: translatex(-50%);
+}
+
+@media only screen and (min-width: 680px) {
+  .footer {
+    max-width: 680px;
+  }
+}
+
+@media only screen and (min-width: 1020px) {
+  .footer {
+    max-width: 1370px;
+    padding: 95px 50px 0px;
+    margin: 95px auto 50px;
+  }
+}
+
+@media only screen and (min-width: 680px) {
+  .footer__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 45px;
+}
+
+@media only screen and (min-width: 680px) {
+  .footer__social {
+    margin-top: 32px;
+  }
+}
+
+@media only screen and (min-width: 1020px) {
+  .footer__social {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-bottom: 16px;
+    margin-top: 16px;
+  }
+}
+
+.footer__social .social-link {
+  margin-right: 30px;
+}
+
+.footer__social .social-link:last-child {
+  margin: 0;
+}
+
+.footer .links-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+@media only screen and (min-width: 680px) {
+  .footer .links-group {
+    min-width: 25%;
+  }
+}
+
+@media only screen and (min-width: 680px) {
+  .footer .links-group {
+    width: 165px;
+    min-width: none;
+  }
+  .footer .links-group:last-child {
+    max-width: none;
+    width: auto;
+  }
+}
+
+.footer .links-group a {
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+@media only screen and (min-width: 1020px) {
+  .footer .links-group a {
+    font-size: 22px;
+    font-weight: 500;
+  }
+}
+
+.footer .links-group p {
+  margin: 0;
+}
+
+@media only screen and (min-width: 1020px) {
+  .footer .links-group p {
+    max-width: 390px;
+  }
+}
+
+.footer .links-group:last-child {
+  margin-top: 25px;
+}
+
+@media only screen and (min-width: 680px) {
+  .footer .links-group:last-child {
+    margin: 0;
+    width: 48%;
+  }
+}
+
+@media only screen and (min-width: 1020px) {
+  .footer .links-group:last-child {
+    width: auto;
+  }
+}
+/*# sourceMappingURL=footer.css.map */

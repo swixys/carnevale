@@ -1,0 +1,112 @@
+@font-face {
+  font-family: Graphik-Semibold;
+  src: url(../assets/fonts/Graphik/Graphik-Semibold-Web.woff) format("woff"), url(../assets/fonts/Graphik/Graphik-Semibold-Web.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: Graphik-Medium;
+  src: url(../assets/fonts/Graphik/Graphik-Medium-Web.woff) format("woff"), url(../assets/fonts/Graphik/Graphik-Medium-Web.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: TiemposHeadline-LightItalic;
+  src: url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.eot) format("embedded-opentype"), url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.woff) format("woff"), url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: TiemposHeadline-Light;
+  src: url(../assets/fonts/Tiempos/tiempos-text-web-regular.eot) format("embedded-opentype"), url(../assets/fonts/Tiempos/tiempos-text-web-regular.woff) format("woff"), url(../assets/fonts/Tiempos/tiempos-text-web-regular.woff2) format("woff2");
+}
+
+button {
+  font-family: Graphik-Medium, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.56;
+  letter-spacing: -0.2px;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  border: 2px solid #f4562f;
+  border-radius: 30px;
+  padding: 0 25px;
+  height: 50px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 1020px) {
+  button {
+    font-size: 22px;
+    line-height: 34px;
+    letter-spacing: -0.25px;
+  }
+}
+
+button:hover {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  background-color: #f4562f;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 1019px) {
+  button:hover {
+    border: 2px solid #f4562f;
+    color: #333333;
+    background-color: transparent;
+  }
+}
+
+@media screen and (max-width: 1019px) {
+  button:active {
+    background-color: #f4562f;
+    color: #ffffff;
+  }
+}
+
+button:focus {
+  outline: none;
+}
+
+button.dark {
+  border-color: #ffffff;
+  color: #ffffff;
+  background-color: transparent;
+}
+
+button.dark:hover {
+  color: #f4562f;
+  background-color: #ffffff;
+}
+
+@media screen and (max-width: 1019px) {
+  button.dark:hover {
+    border-color: #ffffff;
+    color: #ffffff;
+    background-color: transparent;
+  }
+}
+
+@media screen and (max-width: 1019px) {
+  button.dark:active {
+    color: #f4562f;
+    background-color: #ffffff;
+  }
+}
+
+button.dark.slider-control__down {
+  background-color: transparent;
+}
+
+button.dark.slider-control__down:hover {
+  background-color: #ffffff;
+}
+
+.menu button {
+  border: none !important;
+}
+
+.menu button:hover {
+  border: none !important;
+}
+/*# sourceMappingURL=buttons.css.map */

@@ -307,7 +307,7 @@ if (gallery) {
     window.addEventListener('resize', calculateGalleryWidth)
 }
 function calculateGalleryWidth() {
-    gallery.style = `width: calc(100% + ${(window.screen.width - document.querySelector('.contact').getBoundingClientRect().width) / 2 +
+    gallery.style = `width: calc(100% + ${(document.body.clientWidth - document.querySelector('.contact').getBoundingClientRect().width) / 2 +
         parseInt(window.getComputedStyle(document.querySelector('.contact')).getPropertyValue('padding-right'))
         }px)`;
 }

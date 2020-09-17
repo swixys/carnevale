@@ -2,28 +2,34 @@
   font-family: Graphik-Semibold;
   src: url(../assets/fonts/Graphik/Graphik-Semibold-Web.woff) format("woff"), url(../assets/fonts/Graphik/Graphik-Semibold-Web.woff2) format("woff2");
 }
+
 @font-face {
   font-family: Graphik-Medium;
   src: url(../assets/fonts/Graphik/Graphik-Medium-Web.woff) format("woff"), url(../assets/fonts/Graphik/Graphik-Medium-Web.woff2) format("woff2");
 }
+
 @font-face {
   font-family: TiemposHeadline-LightItalic;
   src: url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.eot) format("embedded-opentype"), url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.woff) format("woff"), url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.woff2) format("woff2");
 }
+
 @font-face {
   font-family: TiemposHeadline-Light;
   src: url(../assets/fonts/Tiempos/tiempos-text-web-regular.eot) format("embedded-opentype"), url(../assets/fonts/Tiempos/tiempos-text-web-regular.woff) format("woff"), url(../assets/fonts/Tiempos/tiempos-text-web-regular.woff2) format("woff2");
 }
+
 .container {
   margin: 0 auto;
   padding-left: 25px;
   padding-right: 25px;
 }
+
 @media only screen and (min-width: 680px) {
   .container {
     max-width: 680px;
   }
 }
+
 @media only screen and (min-width: 1020px) {
   .container {
     max-width: 1370px;
@@ -35,6 +41,7 @@
 .contact__header {
   margin-bottom: 40px;
 }
+
 @media only screen and (min-width: 680px) {
   .contact__header h1 {
     text-align: center;
@@ -45,20 +52,24 @@
     margin: 0 auto;
   }
 }
+
 @media only screen and (min-width: 1020px) {
   .contact__header {
     margin-bottom: 95px;
   }
 }
+
 .contact__header .body-large {
   margin-bottom: 20px;
 }
+
 .contact__form {
   padding-bottom: 50px;
   margin-bottom: 40px;
   border-bottom: none;
   position: relative;
 }
+
 .contact__form:before {
   position: absolute;
   content: "";
@@ -67,63 +78,84 @@
   width: 100vw;
   background: #d8d8d8;
   left: 50%;
-  transform: translatex(-50%);
+  -webkit-transform: translatex(-50%);
+          transform: translatex(-50%);
 }
+
 @media only screen and (min-width: 1020px) {
   .contact__form {
     padding-bottom: 90px;
     margin-bottom: 90px;
   }
 }
+
 .contact__form form {
   max-width: 830px;
   margin: 0 auto;
 }
+
 .contact__careers {
   margin-bottom: 90px;
 }
+
 .contact__careers .about__description p {
   font-size: 22px;
 }
+
 @media only screen and (min-width: 1020px) {
   .contact__careers .about__description p {
     font-size: 30px;
   }
 }
+
 .contact__gallery {
   margin-bottom: 40px;
 }
+
 @media only screen and (min-width: 1020px) {
   .contact__gallery {
     margin-bottom: 90px;
   }
 }
+
 .contact__gallery .gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   overflow-x: scroll;
   padding: 0;
-  scroll-snap-type: x mandatory;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
   scroll-padding-inline-start: 20px;
 }
+
 .contact__gallery .gallery::-webkit-scrollbar {
   height: 0;
 }
+
 .contact__gallery .gallery__item {
   width: 285px;
   height: 214px;
   overflow: hidden;
   margin-right: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  flex-shrink: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   scroll-snap-align: start;
 }
+
 @media only screen and (min-width: 680px) {
   .contact__gallery .gallery__item {
     width: 247px;
     height: 185px;
   }
 }
+
 @media only screen and (min-width: 1020px) {
   .contact__gallery .gallery__item {
     width: 500px;
@@ -131,41 +163,50 @@
     margin-right: 50px;
   }
 }
+
 .contact__gallery .gallery__image {
   height: 100%;
 }
+
 .contact__open-position {
   margin-bottom: 45px;
 }
+
 @media only screen and (min-width: 1020px) {
   .contact__open-position {
     margin-bottom: 90px;
   }
 }
+
 .contact__open-position .about__description p {
   margin-bottom: 20px;
   font-size: 18px;
 }
+
 @media only screen and (min-width: 1020px) {
   .contact__open-position .about__description p {
     font-size: 22px;
   }
 }
+
 .contact__open-position .position__list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
+
 .contact__open-position .position__item {
   margin-bottom: 15px;
   line-height: 0;
   font-weight: 500;
 }
+
 @media only screen and (min-width: 1020px) {
   .contact__open-position .position__item {
     margin-bottom: 25px;
   }
 }
+
 .contact__open-position .position__item:last-child {
   margin-bottom: 0;
 }
@@ -173,19 +214,30 @@
 .about {
   margin-bottom: 45px;
 }
+
 @media only screen and (min-width: 680px) {
   .about {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
+
 @media only screen and (min-width: 1020px) {
   .about {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-bottom: 95px;
   }
 }
+
 @media only screen and (min-width: 680px) {
   .about__title, .about__description {
     width: 48%;
@@ -194,6 +246,7 @@
     margin: 0;
   }
 }
+
 @media only screen and (min-width: 680px) {
   .about__description {
     font-size: 30px;
@@ -202,24 +255,29 @@
     letter-spacing: -0.25px;
   }
 }
+
 .about__description a {
   font-size: 18px;
   vertical-align: initial;
 }
+
 @media only screen and (min-width: 1020px) {
   .about__description a {
     font-size: 22px;
   }
 }
+
 .about__title {
   font-family: Graphik-Medium, sans-serif;
 }
+
 .about__title--large {
   font-size: 30px;
   font-weight: 600;
   line-height: 1.27;
   letter-spacing: -0.75px;
 }
+
 @media only screen and (min-width: 1020px) {
   .about__title--large {
     font-size: 40px;
@@ -228,15 +286,18 @@
     letter-spacing: -1px;
   }
 }
+
 .about__link {
   display: none;
   margin-right: 30px;
 }
+
 @media only screen and (min-width: 680px) {
   .about__link {
     display: inline-block;
   }
 }
+
 .about__quote {
   font-family: TiemposHeadline-LightItalic, sans-serif;
   font-weight: 300;
@@ -245,26 +306,35 @@
   font-size: 30px;
   line-height: 1.27;
 }
+
 @media only screen and (min-width: 680px) {
   .about__quote {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     font-size: 30px;
   }
 }
+
 @media only screen and (min-width: 1020px) {
   .about__quote {
     line-height: 1.09;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     font-size: 55px;
   }
 }
+
 .about__quote p {
   margin: 0;
   max-width: 1120px;
 }
+
 .about__quote p:first-child {
   margin-right: 15px;
 }
+
 .about__quote-author {
   font-family: Graphik-Medium, sans-serif;
   font-weight: 500;
@@ -273,37 +343,44 @@
   font-size: 18px;
   padding: 35px 0 0 30px;
 }
+
 @media only screen and (min-width: 1020px) {
   .about__quote-author {
     font-size: 22px;
     padding: 45px 0 0 30px;
   }
 }
+
 .about.quote {
   display: block;
   padding: 0 25px;
 }
+
 @media only screen and (min-width: 680px) {
   .about.quote {
     padding: 0 45px;
   }
 }
+
 @media only screen and (min-width: 680px) {
   .about .title {
     max-width: 560px;
   }
 }
+
 @media only screen and (min-width: 680px) {
   .about .title {
     margin-bottom: 45px;
   }
 }
+
 .about .title__title {
   margin: 0;
   font-family: TiemposHeadline-LightItalic, sans-serif;
   font-size: 22px;
   line-height: 34px;
 }
+
 @media only screen and (min-width: 1020px) {
   .about .title__title {
     font-size: 30px;
@@ -311,6 +388,7 @@
     line-height: 1.33;
   }
 }
+
 .about .title__subtitle {
   margin: 0 0 45px;
   font-family: Graphik-Medium, sans-serif;
@@ -319,6 +397,7 @@
   line-height: 1.13;
   letter-spacing: -1.14px;
 }
+
 @media only screen and (min-width: 1020px) {
   .about .title__subtitle {
     font-size: 55px;
@@ -327,29 +406,36 @@
     letter-spacing: -1.5px;
   }
 }
+
 .about .social-links {
   padding-top: 20px;
   border-top: 1px solid #d8d8d8;
 }
+
 .about .social-links .social-link {
   vertical-align: initial;
   margin-right: 30px;
 }
+
 .about .social-links .social-link:last-child {
   margin-right: 0;
 }
+
 .about .details-image {
   width: 100%;
 }
+
 .about .details-image__wrapper {
   width: 100%;
 }
+
 @media only screen and (min-width: 680px) {
   .about .details-image__wrapper {
     max-height: 354px;
     max-width: 630px;
   }
 }
+
 @media only screen and (min-width: 1020px) {
   .about .details-image__wrapper {
     max-height: 714px;
@@ -366,6 +452,7 @@
 .logo__image {
   display: block !important;
 }
+
 .logo__image--dark {
   display: none !important;
 }
@@ -373,9 +460,11 @@
 .menu__icon-dark {
   visibility: hidden;
 }
+
 .menu__link {
   color: #333333 !important;
 }
+
 .menu__link:hover {
   color: #f4562f !important;
 }
@@ -421,17 +510,20 @@ input:-webkit-autofill:focus {
   height: 185px;
   margin-bottom: 159px;
 }
+
 @media only screen and (min-width: 680px) {
   .contact__gallery {
     margin-bottom: 120px;
   }
 }
+
 @media only screen and (min-width: 1020px) {
   .contact__gallery {
     height: 375px;
     margin-bottom: 180px;
   }
 }
+
 .contact__gallery .gallery {
   position: absolute;
   content: "";
@@ -439,43 +531,53 @@ input:-webkit-autofill:focus {
   width: 100vw;
   left: 0;
   right: 50%;
-  transform: translateX(0px);
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
   margin: 0;
   scroll-padding-inline-start: 0px;
 }
+
 @media only screen and (min-width: 680px) {
   .contact__gallery .gallery {
     top: 0;
     width: 100vw;
     left: 50%;
     right: 50%;
-    transform: translateX(-315px);
+    -webkit-transform: translateX(-315px);
+            transform: translateX(-315px);
   }
 }
+
 @media only screen and (min-width: 1020px) {
   .contact__gallery .gallery {
     top: 0;
     width: calc(100vw - 200px);
     left: 50%;
     right: 50%;
-    transform: translateX(-635px);
+    -webkit-transform: translateX(-635px);
+            transform: translateX(-635px);
   }
 }
+
 @media only screen and (max-width: 1370px) {
   .contact__gallery .gallery {
     left: 0;
-    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
   }
 }
+
 .contact__gallery .gallery__controls {
   bottom: -120px;
   position: absolute;
 }
+
 @media only screen and (min-width: 680px) {
   .contact__gallery .gallery__controls {
     bottom: -81px;
   }
 }
+
 @media only screen and (min-width: 1020px) {
   .contact__gallery .gallery__controls {
     bottom: -93px;
@@ -485,5 +587,4 @@ input:-webkit-autofill:focus {
 .main {
   overflow-x: hidden;
 }
-
 /*# sourceMappingURL=contact.css.map */

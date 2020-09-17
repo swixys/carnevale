@@ -1,0 +1,204 @@
+@font-face {
+  font-family: Graphik-Semibold;
+  src: url(../assets/fonts/Graphik/Graphik-Semibold-Web.woff) format("woff"), url(../assets/fonts/Graphik/Graphik-Semibold-Web.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: Graphik-Medium;
+  src: url(../assets/fonts/Graphik/Graphik-Medium-Web.woff) format("woff"), url(../assets/fonts/Graphik/Graphik-Medium-Web.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: TiemposHeadline-LightItalic;
+  src: url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.eot) format("embedded-opentype"), url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.woff) format("woff"), url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: TiemposHeadline-Light;
+  src: url(../assets/fonts/Tiempos/tiempos-text-web-regular.eot) format("embedded-opentype"), url(../assets/fonts/Tiempos/tiempos-text-web-regular.woff) format("woff"), url(../assets/fonts/Tiempos/tiempos-text-web-regular.woff2) format("woff2");
+}
+
+.header {
+  height: 82px;
+  position: relative;
+  z-index: 2;
+}
+
+@media only screen and (min-width: 680px) {
+  .header {
+    height: 85px;
+  }
+}
+
+@media only screen and (min-width: 1020px) {
+  .header {
+    height: 125px;
+  }
+}
+
+.header__menu-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  height: 82px;
+  padding: 30px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -ms-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 680px) {
+  .header__menu-container {
+    height: 85px;
+  }
+}
+
+@media only screen and (min-width: 1020px) {
+  .header__menu-container {
+    height: 125px;
+  }
+}
+
+@media only screen and (min-width: 680px) {
+  .header__menu-container {
+    max-width: 680px;
+  }
+}
+
+@media only screen and (min-width: 1020px) {
+  .header__menu-container {
+    max-width: 1370px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+.header__menu {
+  height: 100%;
+}
+
+.header__menu.dark .logo__image {
+  display: none;
+}
+
+.header__menu.dark .logo__image--dark {
+  display: block;
+}
+
+.header__menu.dark .menu__icon-dark {
+  display: block;
+}
+
+.header__menu.dark .menu__link {
+  color: #ffffff;
+}
+
+.header__menu.dark .menu__link:hover {
+  color: #f4562f;
+}
+
+.header__menu.open.dark {
+  background-color: #ffffff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.header__menu.open.dark .logo__image {
+  display: block;
+}
+
+.header__menu.open.dark .logo__image--dark {
+  display: none;
+}
+
+.header__menu.open.dark .menu__link {
+  color: #333333;
+}
+
+.header__menu.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  z-index: 100;
+  height: 82px;
+}
+
+@media only screen and (min-width: 680px) {
+  .header__menu.sticky {
+    height: 85px;
+  }
+}
+
+@media only screen and (min-width: 1020px) {
+  .header__menu.sticky {
+    height: 85px;
+  }
+}
+
+@media only screen and (min-width: 1020px) {
+  .header__menu.sticky .header__menu-container {
+    height: 85px;
+  }
+}
+
+.header__menu.sticky.dark .logo__image {
+  display: block;
+}
+
+.header__menu.sticky.dark .logo__image--dark {
+  display: none;
+}
+
+.header__menu.sticky.dark .menu__icon-dark {
+  visibility: hidden;
+}
+
+.header__menu.sticky.dark .menu__link {
+  color: #333333;
+}
+
+.header__menu.sticky.dark .menu__link:hover {
+  color: #f4562f;
+}
+
+.header__menu.sticky.dark.open .menu__icon, .header__menu.sticky.dark.open .menu__icon-dark {
+  visibility: hidden;
+}
+
+.logo {
+  height: 22px;
+  width: 149px;
+}
+
+@media only screen and (min-width: 1020px) {
+  .logo {
+    height: 25px;
+    width: 170px;
+  }
+}
+
+.logo__image--dark {
+  display: none;
+}
+
+.logo__image, .logo__image--dark {
+  width: 100%;
+  height: 100%;
+}
+
+.logo a {
+  border: none;
+}
+/*# sourceMappingURL=header.css.map */

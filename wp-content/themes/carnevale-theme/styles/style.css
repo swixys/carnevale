@@ -2,18 +2,22 @@
   font-family: Graphik-Semibold;
   src: url(../assets/fonts/Graphik/Graphik-Semibold-Web.woff) format("woff"), url(../assets/fonts/Graphik/Graphik-Semibold-Web.woff2) format("woff2");
 }
+
 @font-face {
   font-family: Graphik-Medium;
   src: url(../assets/fonts/Graphik/Graphik-Medium-Web.woff) format("woff"), url(../assets/fonts/Graphik/Graphik-Medium-Web.woff2) format("woff2");
 }
+
 @font-face {
   font-family: TiemposHeadline-LightItalic;
   src: url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.eot) format("embedded-opentype"), url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.woff) format("woff"), url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.woff2) format("woff2");
 }
+
 @font-face {
   font-family: TiemposHeadline-Light;
   src: url(../assets/fonts/Tiempos/tiempos-text-web-regular.eot) format("embedded-opentype"), url(../assets/fonts/Tiempos/tiempos-text-web-regular.woff) format("woff"), url(../assets/fonts/Tiempos/tiempos-text-web-regular.woff2) format("woff2");
 }
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -22,7 +26,8 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {
@@ -64,7 +69,8 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
@@ -101,7 +107,8 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -207,9 +214,9 @@ select {
  * Correct the inability to style clickable types in iOS and Safari.
  */
 button,
-[type=button],
-[type=reset],
-[type=submit] {
+[type="button"],
+[type="reset"],
+[type="submit"] {
   -webkit-appearance: button;
 }
 
@@ -217,9 +224,9 @@ button,
  * Remove the inner border and padding in Firefox.
  */
 button::-moz-focus-inner,
-[type=button]::-moz-focus-inner,
-[type=reset]::-moz-focus-inner,
-[type=submit]::-moz-focus-inner {
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -228,9 +235,9 @@ button::-moz-focus-inner,
  * Restore the focus styles unset by the previous rule.
  */
 button:-moz-focusring,
-[type=button]:-moz-focusring,
-[type=reset]:-moz-focusring,
-[type=submit]:-moz-focusring {
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -248,7 +255,8 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   color: inherit;
   /* 2 */
@@ -280,9 +288,10 @@ textarea {
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
-[type=checkbox],
-[type=radio] {
-  box-sizing: border-box;
+[type="checkbox"],
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */
@@ -291,8 +300,8 @@ textarea {
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type=number]::-webkit-inner-spin-button,
-[type=number]::-webkit-outer-spin-button {
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -300,7 +309,7 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-[type=search] {
+[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
@@ -310,7 +319,7 @@ textarea {
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-[type=search]::-webkit-search-decoration {
+[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -361,18 +370,22 @@ template {
   font-family: Graphik-Semibold;
   src: url(../assets/fonts/Graphik/Graphik-Semibold-Web.woff) format("woff"), url(../assets/fonts/Graphik/Graphik-Semibold-Web.woff2) format("woff2");
 }
+
 @font-face {
   font-family: Graphik-Medium;
   src: url(../assets/fonts/Graphik/Graphik-Medium-Web.woff) format("woff"), url(../assets/fonts/Graphik/Graphik-Medium-Web.woff2) format("woff2");
 }
+
 @font-face {
   font-family: TiemposHeadline-LightItalic;
   src: url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.eot) format("embedded-opentype"), url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.woff) format("woff"), url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.woff2) format("woff2");
 }
+
 @font-face {
   font-family: TiemposHeadline-Light;
   src: url(../assets/fonts/Tiempos/tiempos-text-web-regular.eot) format("embedded-opentype"), url(../assets/fonts/Tiempos/tiempos-text-web-regular.woff) format("woff"), url(../assets/fonts/Tiempos/tiempos-text-web-regular.woff2) format("woff2");
 }
+
 * {
   color: #333333;
 }
@@ -384,6 +397,7 @@ h1 {
   letter-spacing: -1.14px;
   font-weight: 600;
 }
+
 @media screen and (min-width: 1020px) {
   h1 {
     font-size: 70px;
@@ -391,6 +405,7 @@ h1 {
     letter-spacing: -2px;
   }
 }
+
 h1 .italic {
   font-family: TiemposHeadline-LightItalic, sans-serif;
   font-style: italic;
@@ -399,6 +414,7 @@ h1 .italic {
   line-height: 45px;
   letter-spacing: -0.57px;
 }
+
 @media screen and (min-width: 1020px) {
   h1 .italic {
     font-size: 70px;
@@ -413,6 +429,7 @@ h2 {
   line-height: 38px;
   letter-spacing: -0.75px;
 }
+
 @media screen and (min-width: 1020px) {
   h2 {
     font-size: 55px;
@@ -427,6 +444,7 @@ h3 {
   line-height: 38px;
   letter-spacing: -0.75px;
 }
+
 @media screen and (min-width: 1020px) {
   h3 {
     font-size: 40px;
@@ -441,6 +459,7 @@ h4 {
   line-height: 30px;
   letter-spacing: -0.35px;
 }
+
 @media screen and (min-width: 1020px) {
   h4 {
     font-size: 27px;
@@ -455,6 +474,7 @@ h5 {
   line-height: 28px;
   letter-spacing: -0.2px;
 }
+
 @media screen and (min-width: 1020px) {
   h5 {
     font-size: 22px;
@@ -469,6 +489,7 @@ h5 {
   line-height: 30px;
   letter-spacing: -0.1px;
 }
+
 @media screen and (min-width: 1020px) {
   .body-large {
     font-size: 30px;
@@ -484,6 +505,7 @@ body {
   line-height: 28px;
   letter-spacing: -0.3px;
 }
+
 @media screen and (min-width: 1020px) {
   body {
     font-size: 22px;
@@ -496,18 +518,22 @@ body {
   font-family: Graphik-Semibold;
   src: url(../assets/fonts/Graphik/Graphik-Semibold-Web.woff) format("woff"), url(../assets/fonts/Graphik/Graphik-Semibold-Web.woff2) format("woff2");
 }
+
 @font-face {
   font-family: Graphik-Medium;
   src: url(../assets/fonts/Graphik/Graphik-Medium-Web.woff) format("woff"), url(../assets/fonts/Graphik/Graphik-Medium-Web.woff2) format("woff2");
 }
+
 @font-face {
   font-family: TiemposHeadline-LightItalic;
   src: url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.eot) format("embedded-opentype"), url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.woff) format("woff"), url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.woff2) format("woff2");
 }
+
 @font-face {
   font-family: TiemposHeadline-Light;
   src: url(../assets/fonts/Tiempos/tiempos-text-web-regular.eot) format("embedded-opentype"), url(../assets/fonts/Tiempos/tiempos-text-web-regular.woff) format("woff"), url(../assets/fonts/Tiempos/tiempos-text-web-regular.woff2) format("woff2");
 }
+
 button {
   font-family: Graphik-Medium, sans-serif;
   font-size: 18px;
@@ -523,6 +549,7 @@ button {
   background-color: transparent;
   cursor: pointer;
 }
+
 @media only screen and (min-width: 1020px) {
   button {
     font-size: 22px;
@@ -530,11 +557,14 @@ button {
     letter-spacing: -0.25px;
   }
 }
+
 button:hover {
+  -webkit-transition: all 0.2s;
   transition: all 0.2s;
   background-color: #f4562f;
   color: #ffffff;
 }
+
 @media screen and (max-width: 1019px) {
   button:hover {
     border: 2px solid #f4562f;
@@ -542,24 +572,29 @@ button:hover {
     background-color: transparent;
   }
 }
+
 @media screen and (max-width: 1019px) {
   button:active {
     background-color: #f4562f;
     color: #ffffff;
   }
 }
+
 button:focus {
   outline: none;
 }
+
 button.dark {
   border-color: #ffffff;
   color: #ffffff;
   background-color: transparent;
 }
+
 button.dark:hover {
   color: #f4562f;
   background-color: #ffffff;
 }
+
 @media screen and (max-width: 1019px) {
   button.dark:hover {
     border-color: #ffffff;
@@ -567,15 +602,18 @@ button.dark:hover {
     background-color: transparent;
   }
 }
+
 @media screen and (max-width: 1019px) {
   button.dark:active {
     color: #f4562f;
     background-color: #ffffff;
   }
 }
+
 button.dark.slider-control__down {
   background-color: transparent;
 }
+
 button.dark.slider-control__down:hover {
   background-color: #ffffff;
 }
@@ -583,6 +621,7 @@ button.dark.slider-control__down:hover {
 .menu button {
   border: none !important;
 }
+
 .menu button:hover {
   border: none !important;
 }
@@ -591,18 +630,22 @@ button.dark.slider-control__down:hover {
   font-family: Graphik-Semibold;
   src: url(../assets/fonts/Graphik/Graphik-Semibold-Web.woff) format("woff"), url(../assets/fonts/Graphik/Graphik-Semibold-Web.woff2) format("woff2");
 }
+
 @font-face {
   font-family: Graphik-Medium;
   src: url(../assets/fonts/Graphik/Graphik-Medium-Web.woff) format("woff"), url(../assets/fonts/Graphik/Graphik-Medium-Web.woff2) format("woff2");
 }
+
 @font-face {
   font-family: TiemposHeadline-LightItalic;
   src: url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.eot) format("embedded-opentype"), url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.woff) format("woff"), url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.woff2) format("woff2");
 }
+
 @font-face {
   font-family: TiemposHeadline-Light;
   src: url(../assets/fonts/Tiempos/tiempos-text-web-regular.eot) format("embedded-opentype"), url(../assets/fonts/Tiempos/tiempos-text-web-regular.woff) format("woff"), url(../assets/fonts/Tiempos/tiempos-text-web-regular.woff2) format("woff2");
 }
+
 a {
   font-family: Graphik-Medium, sans-serif;
   font-size: 22px;
@@ -614,8 +657,10 @@ a {
   border-bottom: 2px solid #f4562f;
   -webkit-tap-highlight-color: transparent;
 }
+
 a:hover {
   color: #f4562f;
+  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
@@ -623,18 +668,22 @@ a:hover {
   font-family: Graphik-Semibold;
   src: url(../assets/fonts/Graphik/Graphik-Semibold-Web.woff) format("woff"), url(../assets/fonts/Graphik/Graphik-Semibold-Web.woff2) format("woff2");
 }
+
 @font-face {
   font-family: Graphik-Medium;
   src: url(../assets/fonts/Graphik/Graphik-Medium-Web.woff) format("woff"), url(../assets/fonts/Graphik/Graphik-Medium-Web.woff2) format("woff2");
 }
+
 @font-face {
   font-family: TiemposHeadline-LightItalic;
   src: url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.eot) format("embedded-opentype"), url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.woff) format("woff"), url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.woff2) format("woff2");
 }
+
 @font-face {
   font-family: TiemposHeadline-Light;
   src: url(../assets/fonts/Tiempos/tiempos-text-web-regular.eot) format("embedded-opentype"), url(../assets/fonts/Tiempos/tiempos-text-web-regular.woff) format("woff"), url(../assets/fonts/Tiempos/tiempos-text-web-regular.woff2) format("woff2");
 }
+
 .service-carousel {
   display: inline-block;
   padding: 15px 0;
@@ -643,10 +692,13 @@ a:hover {
   width: 280px;
   cursor: pointer;
 }
+
 .service-carousel:hover {
   border-color: #f4562f;
+  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
+
 .service-carousel__title {
   margin: 0;
   font-family: TiemposHeadline-LightItalic, sans-serif;
@@ -654,12 +706,14 @@ a:hover {
   font-weight: 300;
   line-height: 1.56;
 }
+
 @media only screen and (min-width: 1020px) {
   .service-carousel__title {
     font-size: 22px;
     line-height: 34px;
   }
 }
+
 .service-carousel__description {
   margin: 0;
   font-family: Graphik-Medium, sans-serif;
@@ -668,14 +722,17 @@ a:hover {
   letter-spacing: -0.45px;
   font-weight: 500;
 }
+
 @media only screen and (min-width: 1020px) {
   .service-carousel__description {
     font-size: 27px;
     line-height: 34px;
   }
 }
+
 .service-carousel.active {
   border-color: #f4562f;
+  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
@@ -683,64 +740,79 @@ a:hover {
   font-family: Graphik-Semibold;
   src: url(../assets/fonts/Graphik/Graphik-Semibold-Web.woff) format("woff"), url(../assets/fonts/Graphik/Graphik-Semibold-Web.woff2) format("woff2");
 }
+
 @font-face {
   font-family: Graphik-Medium;
   src: url(../assets/fonts/Graphik/Graphik-Medium-Web.woff) format("woff"), url(../assets/fonts/Graphik/Graphik-Medium-Web.woff2) format("woff2");
 }
+
 @font-face {
   font-family: TiemposHeadline-LightItalic;
   src: url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.eot) format("embedded-opentype"), url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.woff) format("woff"), url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.woff2) format("woff2");
 }
+
 @font-face {
   font-family: TiemposHeadline-Light;
   src: url(../assets/fonts/Tiempos/tiempos-text-web-regular.eot) format("embedded-opentype"), url(../assets/fonts/Tiempos/tiempos-text-web-regular.woff) format("woff"), url(../assets/fonts/Tiempos/tiempos-text-web-regular.woff2) format("woff2");
 }
+
 .slider-control__prev, .slider-control__next, .slider-control__down {
   padding: 0;
   width: 50px;
   height: 50px;
   outline: none;
 }
+
 .slider-control__prev:hover .inactive, .slider-control__next:hover .inactive, .slider-control__down:hover .inactive {
   display: none;
 }
+
 @media screen and (max-width: 679px) {
   .slider-control__prev:hover .inactive, .slider-control__next:hover .inactive, .slider-control__down:hover .inactive {
     display: block;
   }
 }
+
 .slider-control__prev:hover .hover, .slider-control__next:hover .hover, .slider-control__down:hover .hover {
   display: block;
 }
+
 @media screen and (max-width: 1019px) {
   .slider-control__prev:hover .hover, .slider-control__next:hover .hover, .slider-control__down:hover .hover {
     display: none;
   }
 }
+
 .slider-control__prev:active .inactive, .slider-control__next:active .inactive, .slider-control__down:active .inactive {
   display: block;
 }
+
 @media screen and (max-width: 1019px) {
   .slider-control__prev:active .inactive, .slider-control__next:active .inactive, .slider-control__down:active .inactive {
     display: none;
   }
 }
+
 .slider-control__prev:active .hover, .slider-control__next:active .hover, .slider-control__down:active .hover {
   display: none;
 }
+
 @media screen and (max-width: 1019px) {
   .slider-control__prev:active .hover, .slider-control__next:active .hover, .slider-control__down:active .hover {
     display: block;
   }
 }
+
 .slider-control__prev .inactive, .slider-control__next .inactive, .slider-control__down .inactive {
   margin: 0 auto;
   display: block;
 }
+
 .slider-control__prev .hover, .slider-control__next .hover, .slider-control__down .hover {
   margin: 0 auto;
   display: none;
 }
+
 .slider-control__prev {
   margin-right: 15px;
 }
@@ -757,21 +829,27 @@ a:hover {
   top: 15px;
   z-index: 1;
 }
+
 .close:hover {
   color: #f4562f;
   background-color: #ffffff;
+  -webkit-transition: none;
   transition: none;
 }
+
 .close:hover .inactive {
   display: none;
 }
+
 .close:hover .hover {
   display: block;
 }
+
 .close .inactive {
   margin: 0 auto;
   display: block;
 }
+
 .close .hover {
   margin: 0 auto;
   display: none;
@@ -781,26 +859,33 @@ a:hover {
   font-family: Graphik-Semibold;
   src: url(../assets/fonts/Graphik/Graphik-Semibold-Web.woff) format("woff"), url(../assets/fonts/Graphik/Graphik-Semibold-Web.woff2) format("woff2");
 }
+
 @font-face {
   font-family: Graphik-Medium;
   src: url(../assets/fonts/Graphik/Graphik-Medium-Web.woff) format("woff"), url(../assets/fonts/Graphik/Graphik-Medium-Web.woff2) format("woff2");
 }
+
 @font-face {
   font-family: TiemposHeadline-LightItalic;
   src: url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.eot) format("embedded-opentype"), url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.woff) format("woff"), url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.woff2) format("woff2");
 }
+
 @font-face {
   font-family: TiemposHeadline-Light;
   src: url(../assets/fonts/Tiempos/tiempos-text-web-regular.eot) format("embedded-opentype"), url(../assets/fonts/Tiempos/tiempos-text-web-regular.woff) format("woff"), url(../assets/fonts/Tiempos/tiempos-text-web-regular.woff2) format("woff2");
 }
+
 .caption {
   border: none;
   cursor: pointer;
 }
+
 .caption:hover .caption__description {
+  -webkit-transition: all 0.2s;
   transition: all 0.2s;
   color: #f4562f;
 }
+
 .caption__title {
   font-family: TiemposHeadline-LightItalic, sans-serif;
   font-size: 18px;
@@ -809,11 +894,13 @@ a:hover {
   font-weight: 300;
   margin: 0;
 }
+
 @media only screen and (min-width: 1020px) {
   .caption__title {
     font-size: 22px;
   }
 }
+
 .caption__description {
   font-family: Graphik-Medium, sans-serif;
   font-size: 22px;
@@ -822,6 +909,7 @@ a:hover {
   font-weight: 500;
   margin: 0;
 }
+
 @media only screen and (min-width: 1020px) {
   .caption__description {
     font-size: 27px;
@@ -833,24 +921,29 @@ a:hover {
   font-family: Graphik-Semibold;
   src: url(../assets/fonts/Graphik/Graphik-Semibold-Web.woff) format("woff"), url(../assets/fonts/Graphik/Graphik-Semibold-Web.woff2) format("woff2");
 }
+
 @font-face {
   font-family: Graphik-Medium;
   src: url(../assets/fonts/Graphik/Graphik-Medium-Web.woff) format("woff"), url(../assets/fonts/Graphik/Graphik-Medium-Web.woff2) format("woff2");
 }
+
 @font-face {
   font-family: TiemposHeadline-LightItalic;
   src: url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.eot) format("embedded-opentype"), url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.woff) format("woff"), url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.woff2) format("woff2");
 }
+
 @font-face {
   font-family: TiemposHeadline-Light;
   src: url(../assets/fonts/Tiempos/tiempos-text-web-regular.eot) format("embedded-opentype"), url(../assets/fonts/Tiempos/tiempos-text-web-regular.woff) format("woff"), url(../assets/fonts/Tiempos/tiempos-text-web-regular.woff2) format("woff2");
 }
+
 .social-links {
   font-family: Graphik-Medium, sans-serif;
   font-size: 18px;
   line-height: 28px;
   letter-spacing: -0.2px;
 }
+
 .social-links span {
   padding-right: 24px;
 }
@@ -862,18 +955,22 @@ a:hover {
 .social-link {
   border: none;
 }
+
 .social-link:hover .inactive {
   display: none;
 }
+
 .social-link:hover .hover {
   display: inline-block;
 }
+
 .social-link .inactive {
   margin: 0 auto;
   display: inline-block;
   width: 18px;
   height: 18px;
 }
+
 .social-link .hover {
   margin: 0 auto;
   display: none;
@@ -885,18 +982,22 @@ a:hover {
   font-family: Graphik-Semibold;
   src: url(../assets/fonts/Graphik/Graphik-Semibold-Web.woff) format("woff"), url(../assets/fonts/Graphik/Graphik-Semibold-Web.woff2) format("woff2");
 }
+
 @font-face {
   font-family: Graphik-Medium;
   src: url(../assets/fonts/Graphik/Graphik-Medium-Web.woff) format("woff"), url(../assets/fonts/Graphik/Graphik-Medium-Web.woff2) format("woff2");
 }
+
 @font-face {
   font-family: TiemposHeadline-LightItalic;
   src: url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.eot) format("embedded-opentype"), url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.woff) format("woff"), url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.woff2) format("woff2");
 }
+
 @font-face {
   font-family: TiemposHeadline-Light;
   src: url(../assets/fonts/Tiempos/tiempos-text-web-regular.eot) format("embedded-opentype"), url(../assets/fonts/Tiempos/tiempos-text-web-regular.woff) format("woff"), url(../assets/fonts/Tiempos/tiempos-text-web-regular.woff2) format("woff2");
 }
+
 .menu__button {
   border: none;
   border-radius: initial;
@@ -907,37 +1008,53 @@ a:hover {
   position: relative;
   outline: none;
 }
+
 @media only screen and (min-width: 680px) {
   .menu__button {
     display: none;
   }
 }
+
 .menu__button:hover {
   background-color: transparent;
 }
+
 .menu__button--open {
   position: absolute;
+  -webkit-transition: width 250ms cubic-bezier(0.2, 0.6, 0.3, 1), -webkit-transform 250ms cubic-bezier(0.2, 0.6, 0.3, 1);
+  transition: width 250ms cubic-bezier(0.2, 0.6, 0.3, 1), -webkit-transform 250ms cubic-bezier(0.2, 0.6, 0.3, 1);
   transition: transform 250ms cubic-bezier(0.2, 0.6, 0.3, 1), width 250ms cubic-bezier(0.2, 0.6, 0.3, 1);
+  transition: transform 250ms cubic-bezier(0.2, 0.6, 0.3, 1), width 250ms cubic-bezier(0.2, 0.6, 0.3, 1), -webkit-transform 250ms cubic-bezier(0.2, 0.6, 0.3, 1);
   visibility: hidden;
-  transform: scaleX(0);
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
 }
+
 .menu__button--close {
   position: absolute;
+  -webkit-transition: width 250ms cubic-bezier(0.2, 0.6, 0.3, 1), -webkit-transform 250ms cubic-bezier(0.2, 0.6, 0.3, 1);
+  transition: width 250ms cubic-bezier(0.2, 0.6, 0.3, 1), -webkit-transform 250ms cubic-bezier(0.2, 0.6, 0.3, 1);
   transition: transform 250ms cubic-bezier(0.2, 0.6, 0.3, 1), width 250ms cubic-bezier(0.2, 0.6, 0.3, 1);
+  transition: transform 250ms cubic-bezier(0.2, 0.6, 0.3, 1), width 250ms cubic-bezier(0.2, 0.6, 0.3, 1), -webkit-transform 250ms cubic-bezier(0.2, 0.6, 0.3, 1);
   visibility: visible;
-  transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
+
 .menu__button img {
   top: 0;
   left: 0;
   margin-top: 5px;
 }
+
 .menu__button img:first-child {
   margin-top: 0;
 }
+
 .menu__icon-dark {
   display: none;
 }
+
 .menu__wrapper {
   visibility: hidden;
   position: fixed;
@@ -947,8 +1064,10 @@ a:hover {
   bottom: 0;
   background-color: #ffffff;
   opacity: 0;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
+
 @media only screen and (min-width: 680px) {
   .menu__wrapper {
     display: block;
@@ -958,47 +1077,72 @@ a:hover {
     visibility: visible;
   }
 }
+
 .menu__list {
   margin: 0;
-  flex: 1 1 auto;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   display: -ms-flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   list-style: none;
   padding: 25px 0 25px 30px;
+  -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
+
 @media only screen and (min-width: 680px) {
   .menu__list {
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
+
 .menu__item {
   margin-bottom: 15px;
   font-family: Graphik-Semibold, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 @media only screen and (min-width: 680px) {
   .menu__item {
     margin: 0 30px 0 0;
   }
 }
+
 .menu__item:last-child {
   margin: 0;
 }
+
 .menu__link {
   border: none;
   font-size: 30px;
   line-height: 38px;
   font-weight: 600;
 }
+
 @media only screen and (max-width: 679px) {
   .menu__link {
     letter-spacing: -1.75px !important;
   }
 }
+
 @media only screen and (min-width: 680px) {
   .menu__link {
     font-size: 18px;
@@ -1007,6 +1151,7 @@ a:hover {
     font-weight: 500;
   }
 }
+
 @media only screen and (min-width: 1020px) {
   .menu__link {
     font-size: 22px;
@@ -1014,60 +1159,94 @@ a:hover {
     letter-spacing: -0.25px;
   }
 }
+
 .menu__social {
   list-style: none;
   padding: 0 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   display: -ms-flex;
-  transform: translateY(-30px);
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+  -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
+
 @media only screen and (min-width: 680px) {
   .menu__social {
     display: none;
   }
 }
+
 .menu__social-item {
   margin-right: 30px;
 }
+
 .menu__social-item:last-child {
   margin: 0;
 }
+
 .menu .menu button {
   border: none !important;
 }
+
 .menu .menu button:hover {
   border: none !important;
 }
+
 .menu.open .menu__button {
   outline: none;
 }
+
 .menu.open .menu__button--open {
   position: absolute;
+  -webkit-transition: width 250ms cubic-bezier(0.2, 0.6, 0.3, 1), -webkit-transform 250ms cubic-bezier(0.2, 0.6, 0.3, 1);
+  transition: width 250ms cubic-bezier(0.2, 0.6, 0.3, 1), -webkit-transform 250ms cubic-bezier(0.2, 0.6, 0.3, 1);
   transition: transform 250ms cubic-bezier(0.2, 0.6, 0.3, 1), width 250ms cubic-bezier(0.2, 0.6, 0.3, 1);
+  transition: transform 250ms cubic-bezier(0.2, 0.6, 0.3, 1), width 250ms cubic-bezier(0.2, 0.6, 0.3, 1), -webkit-transform 250ms cubic-bezier(0.2, 0.6, 0.3, 1);
   visibility: visible;
-  transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
+
 .menu.open .menu__button--close {
   position: absolute;
+  -webkit-transition: width 250ms cubic-bezier(0.2, 0.6, 0.3, 1), -webkit-transform 250ms cubic-bezier(0.2, 0.6, 0.3, 1);
+  transition: width 250ms cubic-bezier(0.2, 0.6, 0.3, 1), -webkit-transform 250ms cubic-bezier(0.2, 0.6, 0.3, 1);
   transition: transform 250ms cubic-bezier(0.2, 0.6, 0.3, 1), width 250ms cubic-bezier(0.2, 0.6, 0.3, 1);
+  transition: transform 250ms cubic-bezier(0.2, 0.6, 0.3, 1), width 250ms cubic-bezier(0.2, 0.6, 0.3, 1), -webkit-transform 250ms cubic-bezier(0.2, 0.6, 0.3, 1);
   visibility: hidden;
-  transform: scaleX(0);
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
 }
+
 .menu.open .menu__list {
-  transform: translateY(0);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
+
 .menu.open .menu__social {
-  transform: translateY(0);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
+
 .menu.open .menu__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   display: -ms-flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   visibility: visible;
   opacity: 1;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -1075,33 +1254,40 @@ a:hover {
   font-family: Graphik-Semibold;
   src: url(../assets/fonts/Graphik/Graphik-Semibold-Web.woff) format("woff"), url(../assets/fonts/Graphik/Graphik-Semibold-Web.woff2) format("woff2");
 }
+
 @font-face {
   font-family: Graphik-Medium;
   src: url(../assets/fonts/Graphik/Graphik-Medium-Web.woff) format("woff"), url(../assets/fonts/Graphik/Graphik-Medium-Web.woff2) format("woff2");
 }
+
 @font-face {
   font-family: TiemposHeadline-LightItalic;
   src: url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.eot) format("embedded-opentype"), url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.woff) format("woff"), url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.woff2) format("woff2");
 }
+
 @font-face {
   font-family: TiemposHeadline-Light;
   src: url(../assets/fonts/Tiempos/tiempos-text-web-regular.eot) format("embedded-opentype"), url(../assets/fonts/Tiempos/tiempos-text-web-regular.woff) format("woff"), url(../assets/fonts/Tiempos/tiempos-text-web-regular.woff2) format("woff2");
 }
+
 .header {
   height: 82px;
   position: relative;
   z-index: 2;
 }
+
 @media only screen and (min-width: 680px) {
   .header {
     height: 85px;
   }
 }
+
 @media only screen and (min-width: 1020px) {
   .header {
     height: 125px;
   }
 }
+
 .header__menu-container {
   position: absolute;
   top: 0;
@@ -1110,27 +1296,37 @@ a:hover {
   z-index: 100;
   height: 82px;
   padding: 30px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -ms-flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 0 auto;
 }
+
 @media only screen and (min-width: 680px) {
   .header__menu-container {
     height: 85px;
   }
 }
+
 @media only screen and (min-width: 1020px) {
   .header__menu-container {
     height: 125px;
   }
 }
+
 @media only screen and (min-width: 680px) {
   .header__menu-container {
     max-width: 680px;
   }
 }
+
 @media only screen and (min-width: 1020px) {
   .header__menu-container {
     max-width: 1370px;
@@ -1138,37 +1334,49 @@ a:hover {
     padding-right: 50px;
   }
 }
+
 .header__menu {
   height: 100%;
 }
+
 .header__menu.dark .logo__image {
   display: none;
 }
+
 .header__menu.dark .logo__image--dark {
   display: block;
 }
+
 .header__menu.dark .menu__icon-dark {
   display: block;
 }
+
 .header__menu.dark .menu__link {
   color: #ffffff;
 }
+
 .header__menu.dark .menu__link:hover {
   color: #f4562f;
 }
+
 .header__menu.open.dark {
   background-color: #ffffff;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
+
 .header__menu.open.dark .logo__image {
   display: block;
 }
+
 .header__menu.open.dark .logo__image--dark {
   display: none;
 }
+
 .header__menu.open.dark .menu__link {
   color: #333333;
 }
+
 .header__menu.sticky {
   position: fixed;
   top: 0;
@@ -1178,36 +1386,45 @@ a:hover {
   z-index: 100;
   height: 82px;
 }
+
 @media only screen and (min-width: 680px) {
   .header__menu.sticky {
     height: 85px;
   }
 }
+
 @media only screen and (min-width: 1020px) {
   .header__menu.sticky {
     height: 85px;
   }
 }
+
 @media only screen and (min-width: 1020px) {
   .header__menu.sticky .header__menu-container {
     height: 85px;
   }
 }
+
 .header__menu.sticky.dark .logo__image {
   display: block;
 }
+
 .header__menu.sticky.dark .logo__image--dark {
   display: none;
 }
+
 .header__menu.sticky.dark .menu__icon-dark {
   visibility: hidden;
 }
+
 .header__menu.sticky.dark .menu__link {
   color: #333333;
 }
+
 .header__menu.sticky.dark .menu__link:hover {
   color: #f4562f;
 }
+
 .header__menu.sticky.dark.open .menu__icon, .header__menu.sticky.dark.open .menu__icon-dark {
   visibility: hidden;
 }
@@ -1216,19 +1433,23 @@ a:hover {
   height: 22px;
   width: 149px;
 }
+
 @media only screen and (min-width: 1020px) {
   .logo {
     height: 25px;
     width: 170px;
   }
 }
+
 .logo__image--dark {
   display: none;
 }
+
 .logo__image, .logo__image--dark {
   width: 100%;
   height: 100%;
 }
+
 .logo a {
   border: none;
 }
@@ -1237,24 +1458,29 @@ a:hover {
   font-family: Graphik-Semibold;
   src: url(../assets/fonts/Graphik/Graphik-Semibold-Web.woff) format("woff"), url(../assets/fonts/Graphik/Graphik-Semibold-Web.woff2) format("woff2");
 }
+
 @font-face {
   font-family: Graphik-Medium;
   src: url(../assets/fonts/Graphik/Graphik-Medium-Web.woff) format("woff"), url(../assets/fonts/Graphik/Graphik-Medium-Web.woff2) format("woff2");
 }
+
 @font-face {
   font-family: TiemposHeadline-LightItalic;
   src: url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.eot) format("embedded-opentype"), url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.woff) format("woff"), url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.woff2) format("woff2");
 }
+
 @font-face {
   font-family: TiemposHeadline-Light;
   src: url(../assets/fonts/Tiempos/tiempos-text-web-regular.eot) format("embedded-opentype"), url(../assets/fonts/Tiempos/tiempos-text-web-regular.woff) format("woff"), url(../assets/fonts/Tiempos/tiempos-text-web-regular.woff2) format("woff2");
 }
+
 .footer {
   padding: 45px 25px;
   padding-bottom: 50px;
   margin: 0 auto;
   position: relative;
 }
+
 .footer:before {
   position: absolute;
   content: "";
@@ -1263,13 +1489,16 @@ a:hover {
   width: 100vw;
   background: #d8d8d8;
   left: 50%;
-  transform: translatex(-50%);
+  -webkit-transform: translatex(-50%);
+          transform: translatex(-50%);
 }
+
 @media only screen and (min-width: 680px) {
   .footer {
     max-width: 680px;
   }
 }
+
 @media only screen and (min-width: 1020px) {
   .footer {
     max-width: 1370px;
@@ -1277,46 +1506,74 @@ a:hover {
     margin: 95px auto 50px;
   }
 }
+
 @media only screen and (min-width: 680px) {
   .footer__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
+
 .footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   margin-top: 45px;
 }
+
 @media only screen and (min-width: 680px) {
   .footer__social {
     margin-top: 32px;
   }
 }
+
 @media only screen and (min-width: 1020px) {
   .footer__social {
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     margin-bottom: 16px;
     margin-top: 16px;
   }
 }
+
 .footer__social .social-link {
   margin-right: 30px;
 }
+
 .footer__social .social-link:last-child {
   margin: 0;
 }
+
 .footer .links-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
+
 @media only screen and (min-width: 680px) {
   .footer .links-group {
     min-width: 25%;
   }
 }
+
 @media only screen and (min-width: 680px) {
   .footer .links-group {
     width: 165px;
@@ -1327,34 +1584,41 @@ a:hover {
     width: auto;
   }
 }
+
 .footer .links-group a {
   margin-bottom: 15px;
   font-size: 18px;
   font-weight: 500;
 }
+
 @media only screen and (min-width: 1020px) {
   .footer .links-group a {
     font-size: 22px;
     font-weight: 500;
   }
 }
+
 .footer .links-group p {
   margin: 0;
 }
+
 @media only screen and (min-width: 1020px) {
   .footer .links-group p {
     max-width: 390px;
   }
 }
+
 .footer .links-group:last-child {
   margin-top: 25px;
 }
+
 @media only screen and (min-width: 680px) {
   .footer .links-group:last-child {
     margin: 0;
     width: 48%;
   }
 }
+
 @media only screen and (min-width: 1020px) {
   .footer .links-group:last-child {
     width: auto;
@@ -1365,26 +1629,32 @@ a:hover {
   font-family: Graphik-Semibold;
   src: url(../assets/fonts/Graphik/Graphik-Semibold-Web.woff) format("woff"), url(../assets/fonts/Graphik/Graphik-Semibold-Web.woff2) format("woff2");
 }
+
 @font-face {
   font-family: Graphik-Medium;
   src: url(../assets/fonts/Graphik/Graphik-Medium-Web.woff) format("woff"), url(../assets/fonts/Graphik/Graphik-Medium-Web.woff2) format("woff2");
 }
+
 @font-face {
   font-family: TiemposHeadline-LightItalic;
   src: url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.eot) format("embedded-opentype"), url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.woff) format("woff"), url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.woff2) format("woff2");
 }
+
 @font-face {
   font-family: TiemposHeadline-Light;
   src: url(../assets/fonts/Tiempos/tiempos-text-web-regular.eot) format("embedded-opentype"), url(../assets/fonts/Tiempos/tiempos-text-web-regular.woff) format("woff"), url(../assets/fonts/Tiempos/tiempos-text-web-regular.woff2) format("woff2");
 }
+
 .page__body.no-scroll {
   overflow: hidden;
 }
+
 @media only screen and (min-width: 680px) {
   .page__body.no-scroll {
     overflow: initial;
   }
 }
+
 .page__body.no-scroll-drawer {
   overflow: hidden;
 }
@@ -1392,14 +1662,17 @@ a:hover {
 .details-image {
   margin: 0 auto;
 }
+
 .details-image__wrapper {
   margin: 0 0 0px;
   overflow: hidden;
   height: 100%;
 }
+
 .details-image__image {
   max-height: 100%;
 }
+
 .details-image__caption {
   margin: 0;
   font-family: TiemposHeadline-LightItalic, sans-serif;
@@ -1407,12 +1680,14 @@ a:hover {
   font-weight: 300;
   line-height: 1.56;
 }
+
 @media only screen and (min-width: 680px) {
   .details-image__caption {
     font-size: 22px;
     line-height: 34px;
   }
 }
+
 @media only screen and (min-width: 1020px) {
   .details-image__caption {
     font-size: 22px;
@@ -1424,71 +1699,97 @@ a:hover {
   font-family: Graphik-Semibold;
   src: url(../assets/fonts/Graphik/Graphik-Semibold-Web.woff) format("woff"), url(../assets/fonts/Graphik/Graphik-Semibold-Web.woff2) format("woff2");
 }
+
 @font-face {
   font-family: Graphik-Medium;
   src: url(../assets/fonts/Graphik/Graphik-Medium-Web.woff) format("woff"), url(../assets/fonts/Graphik/Graphik-Medium-Web.woff2) format("woff2");
 }
+
 @font-face {
   font-family: TiemposHeadline-LightItalic;
   src: url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.eot) format("embedded-opentype"), url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.woff) format("woff"), url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.woff2) format("woff2");
 }
+
 @font-face {
   font-family: TiemposHeadline-Light;
   src: url(../assets/fonts/Tiempos/tiempos-text-web-regular.eot) format("embedded-opentype"), url(../assets/fonts/Tiempos/tiempos-text-web-regular.woff) format("woff"), url(../assets/fonts/Tiempos/tiempos-text-web-regular.woff2) format("woff2");
 }
+
 .carousel {
   position: relative;
 }
+
 .carousel__slides {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   overflow-x: scroll;
   padding: 0;
-  scroll-snap-type: x mandatory;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+  -webkit-transition: all 0.3s 0.1s;
   transition: all 0.3s 0.1s;
 }
+
 .carousel__slides::-webkit-scrollbar {
   height: 0;
 }
+
 .carousel__slides .carousel__slide {
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  flex-shrink: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   scroll-snap-align: start;
 }
+
 .carousel__slide {
   width: 100%;
   display: block;
   position: relative;
 }
+
 .carousel__slide.fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
 }
+
 @-webkit-keyframes fade {
   from {
-    opacity: 0.4;
+    opacity: .4;
   }
   to {
     opacity: 1;
   }
 }
+
 @keyframes fade {
   from {
-    opacity: 0.4;
+    opacity: .4;
   }
   to {
     opacity: 1;
   }
 }
+
 .carousel__image-wrapper {
   width: 100%;
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 @media only screen and (min-width: 680px) {
   .carousel__image-wrapper {
     width: 50%;
@@ -1496,6 +1797,7 @@ a:hover {
     max-height: 436px;
   }
 }
+
 @media only screen and (min-width: 1020px) {
   .carousel__image-wrapper {
     width: 50%;
@@ -1503,34 +1805,41 @@ a:hover {
     max-height: 610px;
   }
 }
+
 .carousel__image {
   height: 375px;
 }
+
 @media only screen and (min-width: 680px) {
   .carousel__image {
     height: 436px;
   }
 }
+
 @media only screen and (min-width: 680px) {
   .carousel__image {
     height: 610px;
   }
 }
+
 .carousel__caption {
   padding: 25px;
 }
+
 @media only screen and (min-width: 680px) {
   .carousel__caption {
     width: 50%;
     padding-bottom: 30px;
   }
 }
+
 .carousel__caption-title {
   margin: 0;
   font-family: TiemposHeadline-LightItalic, sans-serif;
   font-size: 22px;
   line-height: 34px;
 }
+
 .carousel__caption-subtitle {
   margin: 0;
   font-family: Graphik-Medium, sans-serif;
@@ -1538,56 +1847,80 @@ a:hover {
   line-height: 34px;
   letter-spacing: -0.45px;
 }
+
 .carousel__caption-button {
   margin-top: 45px;
 }
+
 @media only screen and (min-width: 680px) {
   .carousel__caption-button {
     display: block;
   }
 }
+
 .carousel__controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: initial;
-  justify-content: space-between;
+  -webkit-box-align: initial;
+      -ms-flex-align: initial;
+          align-items: initial;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 0 25px;
 }
+
 @media only screen and (min-width: 1020px) {
   .carousel__controls {
     padding: 0 50px;
   }
 }
+
 @media only screen and (min-width: 680px) {
   .carousel__controls {
     display: none;
   }
 }
+
 .carousel__controls-slides {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
+
 .carousel__tabs {
   display: none;
 }
+
 @media only screen and (min-width: 680px) {
   .carousel__tabs {
     padding: 20px 25px 22px;
   }
 }
+
 @media only screen and (min-width: 1020px) {
   .carousel__tabs {
     padding: 25px 25px 25px;
   }
 }
+
 @media only screen and (min-width: 680px) {
   .carousel__tabs {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .carousel__tabs .service-carousel {
-    flex-basis: 23%;
+    -ms-flex-preferred-size: 23%;
+        flex-basis: 23%;
     max-width: 139px;
   }
 }
+
 @media only screen and (min-width: 680px) and (min-width: 1020px) {
   .carousel__tabs .service-carousel {
     max-width: 280px;
@@ -1602,18 +1935,22 @@ a:hover {
   font-family: Graphik-Semibold;
   src: url(../assets/fonts/Graphik/Graphik-Semibold-Web.woff) format("woff"), url(../assets/fonts/Graphik/Graphik-Semibold-Web.woff2) format("woff2");
 }
+
 @font-face {
   font-family: Graphik-Medium;
   src: url(../assets/fonts/Graphik/Graphik-Medium-Web.woff) format("woff"), url(../assets/fonts/Graphik/Graphik-Medium-Web.woff2) format("woff2");
 }
+
 @font-face {
   font-family: TiemposHeadline-LightItalic;
   src: url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.eot) format("embedded-opentype"), url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.woff) format("woff"), url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.woff2) format("woff2");
 }
+
 @font-face {
   font-family: TiemposHeadline-Light;
   src: url(../assets/fonts/Tiempos/tiempos-text-web-regular.eot) format("embedded-opentype"), url(../assets/fonts/Tiempos/tiempos-text-web-regular.woff) format("woff"), url(../assets/fonts/Tiempos/tiempos-text-web-regular.woff2) format("woff2");
 }
+
 .drawer {
   position: fixed;
   top: 0;
@@ -1623,85 +1960,110 @@ a:hover {
   background-color: rgba(51, 51, 51, 0.6);
   z-index: 1000;
   visibility: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
+
 .drawer.open {
   visibility: visible;
 }
+
 .drawer.open .drawer__content {
   overflow: auto;
+  -webkit-transition: all 0.1s;
   transition: all 0.1s;
-  transform: translateX(0px);
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
 }
+
 .drawer__content {
   height: 100%;
   width: 100%;
   max-width: none;
   position: relative;
-  transform: translateX(70px);
+  -webkit-transform: translateX(70px);
+          transform: translateX(70px);
+  -webkit-transition: all 0.1s;
   transition: all 0.1s;
 }
+
 @media only screen and (min-width: 680px) {
   .drawer__content {
     max-width: 450px;
   }
 }
+
 @media only screen and (min-width: 1020px) {
   .drawer__content {
     max-width: 620px;
   }
 }
+
 .drawer__content .close {
   position: absolute;
   top: 15px;
   right: 15px;
 }
+
 .drawer__img-wrapper {
   overflow: hidden;
   height: 50%;
 }
+
 @media only screen and (min-width: 680px) {
   .drawer__img-wrapper {
     height: 50%;
   }
 }
+
 @media only screen and (min-width: 1020px) {
   .drawer__img-wrapper {
     height: 50%;
   }
 }
+
 .drawer__image {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   position: relative;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
+
 .drawer__description {
   background-color: #ffffff;
   padding: 35px 25px;
   height: auto;
   min-height: 50%;
 }
+
 @media only screen and (min-width: 1020px) {
   .drawer__description {
     padding: 50px;
     padding-top: 45px;
   }
 }
+
 @media only screen and (min-width: 1020px) {
   .drawer__description .caption__title {
     margin-bottom: 6px;
   }
 }
+
 .drawer__description .caption__description {
   font-size: 30px;
   font-weight: 600;
   line-height: 1.27;
   letter-spacing: -0.75px;
 }
+
 @media only screen and (min-width: 1020px) {
   .drawer__description .caption__description {
     font-size: 40px;
@@ -1710,11 +2072,13 @@ a:hover {
     letter-spacing: -1px;
   }
 }
+
 @media only screen and (max-width: 679px) {
   .drawer__description .caption__description {
     margin-bottom: 20px;
   }
 }
+
 .drawer__description .skill__description {
   margin-bottom: 0;
 }
@@ -1723,32 +2087,42 @@ a:hover {
   font-family: Graphik-Semibold;
   src: url(../assets/fonts/Graphik/Graphik-Semibold-Web.woff) format("woff"), url(../assets/fonts/Graphik/Graphik-Semibold-Web.woff2) format("woff2");
 }
+
 @font-face {
   font-family: Graphik-Medium;
   src: url(../assets/fonts/Graphik/Graphik-Medium-Web.woff) format("woff"), url(../assets/fonts/Graphik/Graphik-Medium-Web.woff2) format("woff2");
 }
+
 @font-face {
   font-family: TiemposHeadline-LightItalic;
   src: url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.eot) format("embedded-opentype"), url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.woff) format("woff"), url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.woff2) format("woff2");
 }
+
 @font-face {
   font-family: TiemposHeadline-Light;
   src: url(../assets/fonts/Tiempos/tiempos-text-web-regular.eot) format("embedded-opentype"), url(../assets/fonts/Tiempos/tiempos-text-web-regular.woff) format("woff"), url(../assets/fonts/Tiempos/tiempos-text-web-regular.woff2) format("woff2");
 }
+
 .video {
   position: relative;
   width: 100%;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
+
 .video:hover {
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
+
 .video:hover .video__button {
   visibility: visible;
 }
+
 .video__media {
   width: 100%;
 }
+
 .video__button {
   visibility: hidden;
   background-color: transparent;
@@ -1757,24 +2131,30 @@ a:hover {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   height: auto;
   width: auto;
   outline: none;
 }
+
 .video__button:hover {
   background-color: transparent;
 }
+
 .video__button:hover .inactive {
   display: none;
 }
+
 .video__button:hover .hover {
   display: block;
 }
+
 .video__button .inactive {
   margin: 0 auto;
   display: block;
 }
+
 .video__button .hover {
   margin: 0 auto;
   display: none;
@@ -1784,18 +2164,22 @@ a:hover {
   font-family: Graphik-Semibold;
   src: url(../assets/fonts/Graphik/Graphik-Semibold-Web.woff) format("woff"), url(../assets/fonts/Graphik/Graphik-Semibold-Web.woff2) format("woff2");
 }
+
 @font-face {
   font-family: Graphik-Medium;
   src: url(../assets/fonts/Graphik/Graphik-Medium-Web.woff) format("woff"), url(../assets/fonts/Graphik/Graphik-Medium-Web.woff2) format("woff2");
 }
+
 @font-face {
   font-family: TiemposHeadline-LightItalic;
   src: url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.eot) format("embedded-opentype"), url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.woff) format("woff"), url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.woff2) format("woff2");
 }
+
 @font-face {
   font-family: TiemposHeadline-Light;
   src: url(../assets/fonts/Tiempos/tiempos-text-web-regular.eot) format("embedded-opentype"), url(../assets/fonts/Tiempos/tiempos-text-web-regular.woff) format("woff"), url(../assets/fonts/Tiempos/tiempos-text-web-regular.woff2) format("woff2");
 }
+
 .form__input {
   border: none;
   padding-bottom: 15px;
@@ -1809,15 +2193,31 @@ a:hover {
   height: 45px;
   max-height: 140px;
 }
+
 .form__input:-webkit-autofill {
   background-color: transparent !important;
 }
+
 .form__input:focus {
   border-color: #f4562f;
 }
+
+.form__input::-webkit-input-placeholder {
+  color: #333333;
+}
+
+.form__input:-ms-input-placeholder {
+  color: #333333;
+}
+
+.form__input::-ms-input-placeholder {
+  color: #333333;
+}
+
 .form__input::placeholder {
   color: #333333;
 }
+
 .form__input-message {
   display: none;
   color: #f4562f;
@@ -1825,17 +2225,20 @@ a:hover {
   margin: 0;
   font-family: Graphik-Medium, sans-serif;
 }
+
 .form__input-wrapper {
   margin-bottom: 40px;
 }
+
 .form__input-wrapper.error .form__input {
   border-color: #f4562f;
 }
+
 .form__input-wrapper.error .form__input-message {
   display: block;
 }
+
 .form__submit {
   margin-top: 10px;
 }
-
 /*# sourceMappingURL=style.css.map */
