@@ -64,7 +64,7 @@ class Carousel {
         };
     }
 
-// Thumbnail image controls
+    // Thumbnail image controls
     currentSlide(n) {
         return () => {
             this.showSlides(this.slideIndex = n);
@@ -271,16 +271,30 @@ function closeDrawer(id) {
 
 if (skillsList.length) {
     skillsList.forEach((skill) => {
-            skill.addEventListener('click', openDrawer(skill.getAttribute('id')));
-        }
+        skill.addEventListener('click', openDrawer(skill.getAttribute('id')));
+    }
     );
 }
 
 if (closeButtons.length) {
     closeButtons.forEach((button) => {
-            button.addEventListener('click', closeDrawer(button.closest('.drawer').getAttribute('id')));
-        }
-    );
+        button.addEventListener('click', closeDrawer(button.closest('.drawer').getAttribute('id')));
+
+        button.closest('.drawer').addEventListener('click', (evt) => {
+            const contentElement = button.closest('.drawer').querySelector('.drawer__content');
+            let targetElement = evt.target;
+
+            do {
+                if (targetElement == contentElement) {
+                    return;
+                }
+
+                targetElement = targetElement.parentNode;
+            } while (targetElement);
+
+            closeDrawer(button.closest('.drawer').getAttribute('id'))();
+        });
+    });
 }
 
 const gallery = document.querySelector('.gallery');
@@ -293,10 +307,9 @@ if (gallery) {
     window.addEventListener('resize', calculateGalleryWidth)
 }
 function calculateGalleryWidth() {
-    gallery.style = `width: calc(100% + ${
-        (window.screen.width - document.querySelector('.contact').getBoundingClientRect().width) / 2 +
+    gallery.style = `width: calc(100% + ${(window.screen.width - document.querySelector('.contact').getBoundingClientRect().width) / 2 +
         parseInt(window.getComputedStyle(document.querySelector('.contact')).getPropertyValue('padding-right'))
-    }px)`;
+        }px)`;
 }
 function scrollToNext() {
     const countViewElements = Math.floor(gallery.getBoundingClientRect().width / (gallery.scrollWidth / galleryItems.length))
