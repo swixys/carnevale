@@ -78,8 +78,8 @@
 
 @media only screen and (min-width: 1020px) {
   .about__content {
-    font-size: 30px;
-    line-height: 42px;
+    font-size: 28px;
+    line-height: 40px;
     letter-spacing: -0.25px;
   }
   .about__content a {
