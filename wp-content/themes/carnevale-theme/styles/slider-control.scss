@@ -8,19 +8,16 @@
     outline: none;
 
     &:hover {
+      transition: all 0.2s;
+      background-color: $orangey-red;
+      color: $white;
+
       .inactive {
         display: none;
-        @media screen and (max-width: 679px) {
-          display: block;
-        }
-
       }
 
       .hover {
         display: block;
-        @media screen and (max-width: 1019px) {
-          display: none;
-        }
       }
     }
     &:active {

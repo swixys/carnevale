@@ -763,24 +763,19 @@ a:hover {
   outline: none;
 }
 
+.slider-control__prev:hover, .slider-control__next:hover, .slider-control__down:hover {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  background-color: #f4562f;
+  color: #ffffff;
+}
+
 .slider-control__prev:hover .inactive, .slider-control__next:hover .inactive, .slider-control__down:hover .inactive {
   display: none;
 }
 
-@media screen and (max-width: 679px) {
-  .slider-control__prev:hover .inactive, .slider-control__next:hover .inactive, .slider-control__down:hover .inactive {
-    display: block;
-  }
-}
-
 .slider-control__prev:hover .hover, .slider-control__next:hover .hover, .slider-control__down:hover .hover {
   display: block;
-}
-
-@media screen and (max-width: 1019px) {
-  .slider-control__prev:hover .hover, .slider-control__next:hover .hover, .slider-control__down:hover .hover {
-    display: none;
-  }
 }
 
 .slider-control__prev:active .inactive, .slider-control__next:active .inactive, .slider-control__down:active .inactive {
