@@ -314,6 +314,17 @@ function calculateGalleryWidth() {
 function scrollToNext() {
     const countViewElements = Math.floor(gallery.getBoundingClientRect().width / (gallery.scrollWidth / galleryItems.length))
     currentViewItem++;
+    console.log(countViewElements);
+
+    if (currentViewItem === (galleryItems.length - 1) - countViewElements) {
+        gallery.scrollTo({
+            left: gallery.scrollWidth / galleryItems.length * ++currentViewItem,
+            behavior: 'smooth'
+        });
+
+        return;
+    }
+
     if (currentViewItem > galleryItems.length - countViewElements) {
         currentViewItem = 0
     }
@@ -325,6 +336,16 @@ function scrollToNext() {
 function scrollToPrev() {
     const countViewElements = Math.floor(gallery.getBoundingClientRect().width / (gallery.scrollWidth / galleryItems.length))
     currentViewItem--;
+
+    if (currentViewItem === (galleryItems.length - 1) - countViewElements) {
+        gallery.scrollTo({
+            left: gallery.scrollWidth / galleryItems.length * --currentViewItem,
+            behavior: 'smooth'
+        });
+
+        return;
+    }
+
     if (currentViewItem < 0) {
         currentViewItem = galleryItems.length - countViewElements
     }
@@ -333,6 +354,7 @@ function scrollToPrev() {
         behavior: 'smooth'
     });
 }
+
 galleryNextBtn && galleryNextBtn.addEventListener('click', scrollToNext);
 galleryPrevBtn && galleryPrevBtn.addEventListener('click', scrollToPrev);
 
