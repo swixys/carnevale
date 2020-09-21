@@ -1135,6 +1135,7 @@ a:hover {
   font-size: 30px;
   line-height: 38px;
   font-weight: 600;
+  border-bottom: 2px solid transparent;
 }
 
 @media only screen and (max-width: 679px) {
