@@ -2,22 +2,18 @@
   font-family: Graphik-Semibold;
   src: url(../assets/fonts/Graphik/Graphik-Semibold-Web.woff) format("woff"), url(../assets/fonts/Graphik/Graphik-Semibold-Web.woff2) format("woff2");
 }
-
 @font-face {
   font-family: Graphik-Medium;
   src: url(../assets/fonts/Graphik/Graphik-Medium-Web.woff) format("woff"), url(../assets/fonts/Graphik/Graphik-Medium-Web.woff2) format("woff2");
 }
-
 @font-face {
   font-family: TiemposHeadline-LightItalic;
   src: url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.eot) format("embedded-opentype"), url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.woff) format("woff"), url(../assets/fonts/Tiempos/tiempos-headline-web-light-italic.woff2) format("woff2");
 }
-
 @font-face {
   font-family: TiemposHeadline-Light;
   src: url(../assets/fonts/Tiempos/tiempos-text-web-regular.eot) format("embedded-opentype"), url(../assets/fonts/Tiempos/tiempos-text-web-regular.woff) format("woff"), url(../assets/fonts/Tiempos/tiempos-text-web-regular.woff2) format("woff2");
 }
-
 .video-container {
   width: 100%;
 }
@@ -29,10 +25,8 @@
   padding-bottom: 56.25%;
   height: auto;
 }
-
 .video iframe, .details-image__wrapper_video iframe, .js-load-video iframe {
-  -webkit-animation-fill-mode: none !important;
-          animation-fill-mode: none !important;
+  animation-fill-mode: none !important;
   position: absolute;
   top: 0;
   left: 0;
@@ -45,13 +39,12 @@
   width: 100%;
   height: 100%;
 }
-
 .js-load-video a {
   position: absolute;
   z-index: 1;
   top: calc(50% - 50px);
   left: calc(50% - 50px);
-  content: '';
+  content: "";
   background: url(../assets/images/play-button.svg) no-repeat;
   width: 100px;
   height: 100px;
@@ -72,18 +65,15 @@ p, h1 {
   letter-spacing: normal;
   font-size: 18px !important;
 }
-
 @media only screen and (min-width: 1020px) {
   .details-image__caption {
     font-size: 22px !important;
   }
 }
-
 .details-image__caption a {
   font-size: 18px !important;
   vertical-align: initial !important;
 }
-
 @media only screen and (min-width: 1020px) {
   .details-image__caption a {
     font-size: 22px !important;
@@ -187,14 +177,12 @@ p, h1 {
   margin-top: 35px;
   padding-right: 0;
 }
-
 @media only screen and (min-width: 680px) {
   .about__description {
     margin-top: 0px;
     padding-right: 25px;
   }
 }
-
 @media only screen and (min-width: 1020px) {
   .about__description {
     padding-right: 50px;
@@ -224,35 +212,23 @@ h1 em {
 }
 
 .contact__form_thanks {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   display: none;
 }
-
 .contact__form_thanks .form_thanks-form {
   width: 100px;
   height: 100px;
   margin-bottom: 40px;
 }
-
 .contact__form_thanks .form_thanks-text {
   font-family: Graphik-Medium, sans-serif;
   font-size: 22px;
   font-weight: 500;
   text-align: center;
 }
-
 .contact__form_thanks.block {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -261,12 +237,10 @@ h1 em {
     border-bottom: none;
   }
 }
-
 .embed-video a {
   top: calc(50% - 50px) !important;
   left: calc(50% - 50px) !important;
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  box-shadow: none !important;
 }
 
 .links-group-par {
@@ -277,7 +251,6 @@ h1 em {
 .details-image__caption a:hover {
   color: #f4562f;
 }
-
 .details-image__caption a span:hover {
   color: #f4562f;
 }
@@ -285,7 +258,6 @@ h1 em {
 .about__description a:hover {
   color: #f4562f;
 }
-
 .about__description a span:hover {
   color: #f4562f;
 }
@@ -297,7 +269,6 @@ h1 em {
 .about-images .details-image__caption {
   max-width: none;
 }
-
 @media only screen and (min-width: 680px) {
   .about-images .details-image__caption {
     max-width: 302px;
@@ -307,7 +278,6 @@ h1 em {
     line-height: 30px;
   }
 }
-
 @media only screen and (min-width: 1020px) {
   .about-images .details-image__caption {
     max-width: none;
@@ -324,14 +294,12 @@ h1 em {
     line-height: 28px;
   }
 }
-
 @media only screen and (max-width: 679px) {
   .about__description a {
     font-size: 19px;
     line-height: 28px;
   }
 }
-
 @media only screen and (min-width: 1020px) {
   .about__description a {
     font-size: 22px;
@@ -344,13 +312,11 @@ h1 em {
     padding-right: 25px;
   }
 }
-
 @media only screen and (min-width: 1020px) {
   .about .about__title {
     padding-right: 50px;
   }
 }
-
 @media only screen and (max-width: 679px) {
   .about .about__description {
     margin-top: 20px;
@@ -360,7 +326,6 @@ h1 em {
 .about__description {
   font-family: TiemposHeadline-Light;
 }
-
 .about__description span {
   display: contents;
 }
@@ -368,4 +333,5 @@ h1 em {
 .about .social-links .social-link {
   margin-right: 25px !important;
 }
+
 /*# sourceMappingURL=my_styles.css.map */
